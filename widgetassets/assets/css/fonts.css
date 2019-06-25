@@ -1,0 +1,111 @@
+@font-face 
+{
+    font-family: 'GothamBook';
+    src: url('../fonts/GothamBook.eot');
+    src: url('../fonts/GothamBook.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamBook.woff') format('woff'),
+         url('../fonts/GothamBook.ttf') format('truetype'),
+         url('../fonts/GothamBook.svg#GothamBook') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face 
+{
+    font-family: 'GothamBookItalic';
+    src: url('../fonts/GothamBookItalic.eot');
+    src: url('../fonts/GothamBookItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamBookItalic.woff') format('woff'),
+         url('../fonts/GothamBookItalic.ttf') format('truetype'),
+         url('../fonts/GothamBookItalic.svg#GothamBookItalic') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face 
+{
+    font-family: 'GothamMedium';
+    src: url('../fonts/GothamMedium.eot');
+    src: url('../fonts/GothamMedium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamMedium.woff') format('woff'),
+         url('../fonts/GothamMedium.ttf') format('truetype'),
+         url('../fonts/GothamMedium.svg#GothamMedium') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face 
+{
+    font-family: 'GothamBold';
+    src: url('../fonts/GothamBold.eot');
+    src: url('../fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamBold.woff') format('woff'),
+         url('../fonts/GothamBold.ttf') format('truetype'),
+         url('../fonts/GothamBold.svg#GothamBold') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face 
+{
+    font-family: 'GothamBlack';
+    src: url('../fonts/GothamBlack.eot');
+    src: url('../fonts/GothamBlack.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamBlack.woff') format('woff'),
+         url('../fonts/GothamBlack.ttf') format('truetype'),
+         url('../fonts/GothamBlack.svg#GothamBlack') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'StagSansRound-Light';
+    src: url('../fonts/StagSansRound-Light.eot');
+    src: url('../fonts/StagSansRound-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/StagSansRound-Light.woff') format('woff'),
+         url('../fonts/StagSansRound-Light.ttf') format('truetype'),
+         url('../fonts/StagSansRound-Light.svg#StagSansRound-Light') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face 
+{
+    font-family: 'StagSansRound-Book';
+    src: url('../fonts/StagSansRound-Book.eot');
+    src: url('../fonts/StagSansRound-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/StagSansRound-Book.woff') format('woff'),
+         url('../fonts/StagSansRound-Book.ttf') format('truetype'),
+         url('../fonts/StagSansRound-Book.svg#StagSansRound-Book') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face 
+{
+    font-family: 'StagSansRound-Medium';
+    src: url('../fonts/StagSansRound-Medium.eot');
+    src: url('../fonts/StagSansRound-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/StagSansRound-Medium.woff') format('woff'),
+         url('../fonts/StagSansRound-Medium.ttf') format('truetype'),
+         url('../fonts/StagSansRound-Medium.svg#StagSansRound-Medium') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face 
+{
+    font-family: 'StagSansRound-Semibold';
+    src: url('../fonts/StagSansRound-Semibold.eot');
+    src: url('../fonts/StagSansRound-Semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/StagSansRound-Semibold.woff') format('woff'),
+         url('../fonts/StagSansRound-Semibold.ttf') format('truetype'),
+         url('../fonts/StagSansRound-Semibold.svg#StagSansRound-Semibold') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face 
+{
+    font-family: 'StagSansRound-Bold';
+    src: url('../fonts/StagSansRound-Bold.eot');
+    src: url('../fonts/StagSansRound-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/StagSansRound-Bold.woff') format('woff'),
+         url('../fonts/StagSansRound-Bold.ttf') format('truetype'),
+         url('../fonts/StagSansRound-Bold.svg#StagSansRound-Bold') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}

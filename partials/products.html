@@ -1,0 +1,2357 @@
+ 
+<header>
+  <div class="container">
+    <div class="container-content clearfix">
+         <div class="col-xs-12 col-sm-12 col-md-6">
+    		<div class="clearfix" id="logoLink"><p id="logo">Time Warner Cable</p></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+		<div class="box-call-top">
+        	<p class="txt1 hidden-xs">Order by phone<br><span class="strPhone" id="strPhone">844-517-3376</span></p>
+	        <p class="mobtxt1 visible-xs"><a class="btn btn-primary op" href="tel:844-517-3376" style="opacity: 1;"><i class="fa fa-phone"></i>&nbsp; Click to call</a></p>
+    	    <p class="txt2 hidden-xs">Mon-Fri 7AM - 1AM | Sat - Sun 7AM-11PM EST</p>
+		</div>
+        </div>
+	</div>
+  </div>
+</header>
+
+
+<div class="wrap-container">
+    <section  class="stepwrap">
+    <div class="container">
+          <div class="col-md-12">
+             <ol class="breadcrumb breadcrumb1">
+             <!--<li class="steps"><span>Order Progress</span></li>-->
+              <li class="active"><span>1. Select Plan</span></li>
+              <li><span>2. Customize Service</span></li>
+              <li><span>3. Billing & Installation</span></li>
+              <li class="cartstatus pull-right hidden-xs hidden-sm"><a><strong>1</strong> &nbsp;<i class="fa fa-shopping-cart fa-lg"></i> &nbsp;View Cart </a></li>
+            </ol>
+          </div>
+      </div>
+    </section>
+
+
+  <section class="main-content">
+     <div class="container container-content clearfix">
+      <div class="col-md-12"><p class="count">Showing plans available at <span class="address">5831 pine ridge circle, Vero Beach, FL, 32965</span> &nbsp;<a data-target="#address-modal" data-toggle="modal" href="#" class="small">edit</a></p></div>
+      
+      <div class="togglewidth col-md-12">
+        <ul id="offer_filter" class="row  hidden-xs">
+          <li class="active">All Bundles</li>
+          <li>Triple Plays</li>
+          <li>Double Plays</li>
+          <li>TV</li>
+          <li>Internet</li>
+
+        </ul>
+        <div class="planwrap clearfix">
+        <div class="col-md-12">
+							<div class="row">
+								<div class="form-group col-xs-12 col-sm-6 col-md-9"> 
+                                    <div class="form-group col-xs-12 col-sm-6 col-md-9 visible-xs">
+                                    	<div class="offerFilterTitle text-center">Showing:</div>
+										<ul class="nav nav-pills navfilter visible-xs">
+                                            <li class="dropdown text-center">
+                                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                                <span class="dropdown-title">All Bundles</span><span class="caret"></span>
+                                            </a>
+                                            <ul role="menu" class="dropdown-menu" id="offerTypes">
+                                            <li onclick="showService('TriplePlay',this);" data-sort="7" id="TriplePlay"><a href="#">Triple Plays</a></li><li onclick="showService('DoublePlay',this);" data-sort="6" id="DoublePlay"><a href="#">Double Plays</a></li><li onclick="showService('Video',this);" data-sort="5" id="Video"><a href="#">TV</a></li><li onclick="showService('Data',this);" data-sort="4" id="Data"><a href="#">Internet</a></li><li onclick="showService('Latino',this);" data-sort="0" id="Latino"><a href="#">Latino</a></li><li class="divider"></li><li onclick="showService('All Bundles',this);" data-sort="6" id="All Bundles"><a href="#">All Bundles</a></li></ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+									<!-- Hidden by default. Displayed if its a multiprovider -->
+									<div class="form-group col-xs-12 col-sm-6 col-md-5  ">
+										<select id="sortProvider" class="form-control sorters">
+											<option selected="selected" data-value="all">All Providers</option>
+											<!-- Providers appended here -->
+										</select>
+									</div>
+									<div class="form-group col-xs-12 col-sm-6 col-md-5 hidden-xs">
+                                        <select id="sortService" class="form-control sorters">
+                                            <option data-sort="h2l">Price High to Low</option>
+                                            <option selected="selected" data-sort="l2h">Price Low to High</option>
+                                            <option data-sort="rank">Recommended</option>
+                                            
+										</select>
+									</div>
+									
+								</div>
+								<div class="btn-group hidden-sm hidden-xs col-md-3">
+									<p class="text-right" id="viewDropDown">
+										<button class="btn btn-default gridviewlg " type="button" name="gridViewLG"><i class="fa fa-th-large"></i></button>
+										<button class="btn btn-default gridview " type="button" name="gridView"><i class="fa fa-th"></i></button>
+										<button class="btn btn-default listview active" type="button" name="listView"><i class="fa fa-th-list"></i></button>
+									</p>
+								</div>
+							</div><!-- /row -->
+						</div>
+                        
+                        
+      
+
+<!--  
+**************************** List View **************************** 
+**************************** AngularJS ****************************   
+-->
+          
+          <section class="horizContainer clearfix hide"> 
+           <div ng-controller="productsCtrl">
+            
+            <div class="col-md-12" ng-repeat="c in products">
+              <div class="box-1 cashback">
+                <div class="box-1-inner cashback clearfix">
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-4">
+                    <div class="CTL eplanlogol"><img class="desaturate" src="{{c.logo}}"></div>
+                    <h3 class="">{{c.name}}</h3>
+                    <div class="icons1"> <img height="18" src="widgetassets/img/ico-tv1.png"> <img height="9" src="widgetassets/img/ico-plus1.png"> <img height="20" src="widgetassets/img/ico-internet1.png"> </div>
+                  </div>
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-5"> 
+                    <!--<h4><span>Features / Promos</span></h4> -->
+                    <ul class="bullet-2 features">
+                      <li><i class="fa fa-circle"></i>{{c.features}}</li>
+                      <li><i class="fa fa-circle"></i>Speeds up to 30 Mbps</li>
+                      <li><i class="fa fa-circle"></i>Home WiFi</li>
+                    </ul>
+                    <h4><span>Promotions</span></h4>
+                    <ul class="bullet-2 promos">
+                      <li><i class="fa fa-check"></i>{{c.promos}}</li>
+                      <li><i class="fa fa-check"></i>Includes HBO &amp; HBO GO</li>
+                    </ul>
+                  </div>
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-3  ">
+                    <h6 class=""> <span class="i1">only</span> <span class="i2">{{c.price}}</span> <span class="i3">per mo. for 12 mo.</span> </h6> 
+<p class="text-center"><a class="btn  btn-med   btn-primary" href="customize-service.html">Order Now &nbsp;<i class="fa fa-chevron-right"></i></a> <a class="btn  btn-med   btn-primary2" href="customize-service.html">More from XFINITY</a></p>
+
+                  </div>
+                </div>  <!-- /box-1-inner --> 
+                  <div class="col-md-12 planfooterH">
+                        <a class="trigger link1" data-target="#xfinitychannels" data-toggle="modal" href="#"><i class="fa fa-caret-square-o-right"></i> channels</a> 
+                        <a class="trigger link1" data-target="#details" data-toggle="modal" href="#"><i class="fa fa-plus-square"></i>  Plan details</a> 
+                        <form action="" class="pull-right link1 hidden-xs hidden-sm">
+                        	<input type="checkbox" name="compare" value="compare"> compare
+                        </form> 
+                        </div>
+              </div>
+              <!-- /box-1 --> 
+            </div>
+            <!-- /col --> 
+            
+            
+           
+           </div><!--ng-controller-->
+          </section>
+         
+          
+<!--  
+**************************** GRID VIEW  ****************************  
+**************************** AngularJS  ****************************  
+-->
+          
+          <section class="gridContainer hide">
+            <div ng-controller="productsCtrl">
+            <div class="col-xs-12 col-sm-12 col-md-3 " ng-repeat="c in products">
+              <div class="box-1 cashback">
+                <div class="box-1-inner cashback clearfix">
+                  <div class="horizontal  col-md-12 sameHeight1">
+                    
+                     <!-- available  twc, att, comcast, cox, verizon, centurylink, charter, brighthouse, DTV, exede -->
+                    <div class="CTL eplanlogo"><img src="{{c.logo}}"></div>
+                    
+                    <h3 class="">{{c.name}}</h3>
+                    <div class="icons1"> <img height="18" src="widgetassets/img/ico-tv1.png"> <img height="9" src="widgetassets/img/ico-plus1.png"> <img height="20" src="widgetassets/img/ico-internet1.png"> </div>
+                  </div>
+                  <div class="horizontal col-md-12">
+                    <h6 class="sameHeight5"> <span class="i1">only</span> <span class="i2"><sup>$</sup>{{c.price}}</span> <span class="i3">per mo. for 12 month</span> 
+                      <!--<span class="i3"> with 2 year term</span> 
+                        <span class="i4">Was <strike>$129.97</strike></span>--> 
+                    </h6> 
+<p class="text-center"><a class="btn  btn-med   btn-primary" href="customize-service.html">Order Now &nbsp;<i class="fa fa-chevron-right"></i></a> <a class="btn  btn-med   btn-primary2" href="customize-service.html">More from XFINITY</a></p>
+                  </div>
+                </div><!-- /box-1-inner --> 
+                
+                <div class="col-md-12 planfooterG popover-markup "><a data-toggle="modal" data-target="#feature-modal" class="trigger link1" href="#"  ><i class="fa fa-caret-square-o-right"></i> features</a>
+                </div>  
+               </div> <!-- /box-1 --> 
+            </div> <!-- /plan --> 
+            
+            
+           </div><!--ng-controller--> 
+          </section>
+          
+<!--  
+**************************** GRID LARGE VIEW  ****************************    
+-->
+
+<section class="gridlgContainer">
+<div ng-controller="productsCtrl">
+ <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+      
+       <!-- plan1 -->
+            <div id="plan1" class="col-md-4"  ng-repeat="c in products">
+              <div class="box-1 cashback">
+                <div class="box-1-inner cashback clearfix">
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12   sameHeight1">
+                    <div class="CTL eplanlogo"><img class="desaturate" src="{{c.logo}}"></div>
+                    <h3 class="">{{c.name}}</h3>
+                    <div class="icons1"> <img height="18" src="widgetassets/img/ico-tv1.png"> <img height="9" src="widgetassets/img/ico-plus1.png"> <img height="20" src="widgetassets/img/ico-internet1.png"> </div>
+                  </div>
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12"> 
+                    <!--<h4><span>Features / Promos</span></h4> -->
+                    <ul class="bullet-2 features  sameHeight3">
+                      <li><i class="fa fa-circle"></i>{{c.features}}</li>
+                      <li><i class="fa fa-circle"></i>Speeds up to 30 Mbps</li>
+                      <li><i class="fa fa-circle"></i>Home WiFi</li>
+                    </ul>
+                    
+                    <ul class="bullet-2 promos  sameHeight2">
+                       <h4><span>Promotions</span></h4> 
+                      <li><i class="fa fa-check"></i>{{c.promos}}</li>
+                      <li><i class="fa fa-check"></i>Includes HBO &amp; HBO GO</li>
+                    </ul>
+                  </div>
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12  ">
+                    <h6 class="sameHeight5"> <span class="i1">only</span> <span class="i2">{{c.price}}</span> <span class="i3">per mo. for 12 mo.</span> </h6> 
+<p class="text-center"><a class="btn  btn-med   btn-primary" href="customize-service.html">Order Now &nbsp;<i class="fa fa-chevron-right"></i></a> <a class="btn  btn-med   btn-primary2" href="customize-service.html">More from XFINITY</a></p>
+
+                  </div>
+                </div>  <!-- /box-1-inner --> 
+                 	<div class="col-md-12 planfooterG">
+                        <a class="trigger link1" data-target="#xfinitychannels" data-toggle="modal" href="#"><i class="fa fa-caret-square-o-right"></i> channels</a> 
+                        <a class="trigger link1" data-target="#details" data-toggle="modal" href="#"><i class="fa fa-plus-square"></i>  Plan details</a> 
+                        <form action="" class="pull-right link1 hidden-xs hidden-sm"><input type="checkbox" name="compare" value="compare"> compare</form>
+                    </div>
+              </div>
+              <!-- /box-1 --> 
+            </div>
+            <!-- /col --> 
+            
+                      
+        </div>
+        <!-- /row --> 
+        </div><!--ng-controller-->
+</section>
+
+
+<!--  
+**************************** /GRID LARGE VIEW  ****************************    
+-->  
+ 
+      </div>
+        <!-- /row --> 
+      </div>
+      <!-- /planwrap -->
+
+<!--  
+**************************** CART ****************************    
+-->
+
+        <div class="cart col-md-3 hide mt35">
+        <div class="box-3">
+          <div class="box-3-inner clearfix">
+            <h3>Shopping Cart <i class="fa fa-shopping-cart fa-lg pull-right"></i></h3>
+            <table class="table  table3">
+              <tbody>
+ 
+                <tr>
+                  <td>Preferred TV, Basic Internet (3 Mbps) &amp; Home Phone National</td>
+                  <td class="text-right"><div class="txt1"><strong>$119.99</strong> <br>
+                      <a class="link2" href="#">Remove</a></div></td>
+                </tr>
+                <tr class="bg2">
+                  <td><div class="txt2">Total Monthly Charges</div></td>
+                  <td class="text-right"><div class="txt3"><strong>$119.99</strong></div></td>
+                </tr>
+               </tbody>
+            </table>
+            
+            <div class="col-xs-12 col-sm-12 col-lg-12 mb10">
+                <a data-toggle="collapse" class="link1 collapsed mb10" href="#more1"><i class="fa fa-plus-square-o"></i> Details</a>
+                <p class="cartsmall collapse" id="more1" > YOU WILL BE ABLE TO SELECT EQUIPMENT, MODIFY YOUR ORDER and schedule installation at checkout. *Programming, pricing and offers are subject to change and may vary in certain markets. Some offers may not be available through all channels and in select areas. </p></td>
+            </div>  
+            <div class="col-xs-12 col-sm-12 col-lg-12"> <a class="btn btn btn-med btn-primary  btn-block" href="customize-service.html">Continue &nbsp; <i class="fa fa-chevron-right"></i></a> </div>
+          </div>
+          <!-- /box-3-inner --> 
+        </div>
+        
+<!--   Toggle FAQ     -->
+        <div class="box-3 box-faq  mt20">
+          <div class="box-3-inner clearfix">
+            <h3>Consejos Útiles <i class="fa fa-info-circle fa-lg pull-right"></i></h3>
+ 
+            <div class="col-xs-12 col-sm-12 col-lg-12 bordertop">
+                <a data-toggle="collapse" class="faqlink collapsed mb10" href="#faq1"><i class="fa fa-angle-right"></i>¿Cuánto será el pago cuando termine la promoción de 12 meses?</a>
+                <p class="cartsmall collapse" id="faq1" >Después de que termine el periodo de promoción, se te cobrará la tarifa estándar que esté vigente en ese momento. Te sugerimos que te comuniques con tu oficina local al final del periodo de promoción para saber qué otras ofertas están disponibles en ese momento.</p> 
+            </div> 
+            
+            <div class="col-xs-12 col-sm-12 col-lg-12 bordertop">
+                <a data-toggle="collapse" class="faqlink  collapsed mb10" href="#faq2"><i class="fa fa-angle-right"></i>¿Cómo agrego canales premium?</a>
+                <p class="cartsmall collapse" id="faq2" >Puedes agregar canales premium a tu orden seleccionando primero el paquete que te gustaría comprar. La página siguiente tendrá una lista de canales premium y precios disponibles, así como otros productos para personalizar tu orden que pueden estar disponibles con tu plan.</p> 
+            </div>   
+            
+             <div class="col-xs-12 col-sm-12 col-lg-12 bordertop">
+                <a data-toggle="collapse" class="faqlink collapsed mb10" href="#faq3"><i class="fa fa-angle-right"></i>¿Qué canales puedo tener?</a>
+                <p class="cartsmall collapse" id="faq3" >Puedes ver los canales disponibles haciendo clic en el enlace de Listado de canales en la parte superior de la página.</p> 
+            </div>  
+            
+          </div>
+          <!-- /box-3-inner --> 
+        </div>
+        
+        
+        <div class="messagebox">
+          <h4>Have questions about selecting the right  plan?</h4>
+          <p>Speak to an authorized agent now.<br>
+            Call toll-free  &nbsp;<span><i class="fa fa-phone-square"></i> 1-888-123-1234 </span> </p>
+        
+        </div>
+      </div>
+      <!-- /container-content --> 
+    </div>
+    <!-- /container --> 
+  </section>
+  <footer>
+    <div class="container">
+      <div class="container-content clearfix">
+        <div class="copyright">&copy; 2015 Bridgevine, All Rights Reserved</div>
+      </div>
+      <!-- /container-content --> 
+    </div>
+    <!-- /container --> 
+  </footer>
+
+
+
+  <section class="main-content content-compare-plans mb0">
+  <a href="#" class="btn btn-primary btn-xs toggleButton"><strong>  -  </strong></a>
+   <div class="container container-content clearfix">     
+    <div class="compare-plans clearfix">
+      
+      <div class="col-xs-12 col-sm-4 col-lg-4 col-md-offset-8">
+     	 <div class="row">
+               <div class="col-xs-4 col-sm-4 col-lg-4">
+                <p class="txt1">Compare up <br/>to 3 plans</p>
+               </div><!-- /col -->
+               <div class="col-xs-4 col-sm-4 col-lg-4">
+                <p class="txt2"><a href="#"><i class="fa fa-check-square"></i></a> <a href="#"><i class="fa fa-square-o"></i></a> <a href="#"><i class="fa fa-square-o"></i></a></p>
+               </div><!-- /col -->
+               <div class="col-xs-4 col-sm-4 col-lg-4">
+                <p><a href="#" class="btn btn-primary btn-xs ">COMPARE</a></p>
+               </div><!-- /col -->
+            </div><!-- /row -->  
+      </div>   
+     </div><!-- /compare-plans -->   
+   </div>
+  </section>
+
+</div>
+<!-- /wrap-container --> 
+
+<!--  MODALS -->
+<div class="modal channels fade" id="xfinitychannels">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">&times;</button>
+        <h4 class="modal-title">XFINITY<sup>&reg;</sup> Channel Guide</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered table2">
+          <thead>
+            <tr>
+              <td class="hidden-sm">&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td align="center"><div class="limited_characters1">Starter</div></td>
+              <td align="center"><div class="limited_characters1">Preferred</div></td>
+              <td align="center"><div class="limited_characters1">Premier</div></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/A_E.png" /></td>
+              <td class="">A&amp;E</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/abc.png" /></td>
+              <td class="">ABC</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/abc-f.png" /></td>
+              <td class="">ABC Family</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/amc.png" /></td>
+              <td class="">AMC</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/animal.png" /></td>
+              <td class="">Animal Planet</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/azteca-a.png" /></td>
+              <td class="">Azteca America</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/bbc-a.png" /></td>
+              <td class="">BBC America</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/bet.png" /></td>
+              <td class="">BET</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/bravo.png" /></td>
+              <td class="">Bravo</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Biography.png" /></td>
+              <td class="">Biography</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Bloomberg.png" /></td>
+              <td class="">Bloomberg</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Babyfirst-Americas.png" /></td>
+              <td class="">Babyfirst Americas</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/cspan.png" /></td>
+              <td class="">C-SPAN 3</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/CartoonNetwork.png" /></td>
+              <td class="">Cartoon Network</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/cbs.png" /></td>
+              <td class="">CBS</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/cbs-s.png" /></td>
+              <td class="">CBS Sports Network</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/centric.png" /></td>
+              <td class="">Centric</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/cmt.png" /></td>
+              <td class="">CMT</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/cmt.png" /></td>
+              <td class="">CMT Pure Country</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/cnbc.png" /></td>
+              <td class="">CNBC</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/cnn.png" /></td>
+              <td class="">CNN</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/comedycentral.png" /></td>
+              <td class="">Comedy Central</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm">&nbsp;</td>
+              <td class="">Create</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/cw.png" /></td>
+              <td class="">CW</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Current-TV.png" /></td>
+              <td class="">Current TV</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Cooking-Channel.png" /></td>
+              <td class="">Cooking Channel</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Crime-Investigation.png" /></td>
+              <td class="">Crime &amp; Investigation</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Cinemax.png" /></td>
+              <td class="">Cinemax</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Moremax.png" /></td>
+              <td class="">Moremax</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Actionmax.png" /></td>
+              <td class="">Actionmax</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Thrillermax.png" /></td>
+              <td class="">Thrillermax</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/5Starmax.png" /></td>
+              <td class="">5Starmax</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Outermax.png" /></td>
+              <td class="">Outermax</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/daystar.png" /></td>
+              <td class="">Daystar</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/destination-america.png" /></td>
+              <td class="">Destination America</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/discovery.png" /></td>
+              <td class="">Discovery Channel</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/discovery-fit-health.png" /></td>
+              <td class="">Discovery Fit &amp; Health</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/disney.png" /></td>
+              <td class="">Disney Channel</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/disney-xd.png" /></td>
+              <td class="">Disney XD</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Diy-Network.png" /></td>
+              <td class="">Diy Network</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/E.png" /></td>
+              <td class="">E!</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/espn.png" /></td>
+              <td class="">ESPN</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/espn2.png" /></td>
+              <td class="">ESPN2</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/espn-news.png" /></td>
+              <td class="">ESPNews</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/espnu.png" /></td>
+              <td class="">ESPNU</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/ESPN-Classic.png" /></td>
+              <td class="">ESPN Classic</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/ESPN-Goal-Line.png" /></td>
+              <td class="">ESPN Goal Line</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/ESPN-3D.png" /></td>
+              <td class="">ESPN 3D <em class="fontsize11">*3D TV Req</em></td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/encore.png" /></td>
+              <td class="">Encore</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/encore-action.png" /></td>
+              <td class="">Encore Action</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/encore-drama.png" /></td>
+              <td class="">Encore Drama</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/encore-family.png" /></td>
+              <td class="">Encore Family</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/encore-love.png" /></td>
+              <td class="">Encore Love</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/encore-suspense.png" /></td>
+              <td class="">Encore Suspense</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/encore-westerns.png" /></td>
+              <td class="">Encore Westerns</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/food-n.png" /></td>
+              <td class="">Food Network</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/fox.png" /></td>
+              <td class="">Fox</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/fox-business.png" /></td>
+              <td class="">Fox Business Network</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/fox-news.png" /></td>
+              <td class="">Fox News Channel</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/fox-soccer.png" /></td>
+              <td class="">Fox Soccer</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/fuse.png" /></td>
+              <td class="">Fuse</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/fx.png" /></td>
+              <td class="">FX</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/fcs.png" /></td>
+              <td class="">FCS Atlantic</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/fcs.png" /></td>
+              <td class="">FCS Central</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/fcs.png" /></td>
+              <td class="">FCS Pacific</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Free-Movies-On-Demand.png" /></td>
+              <td class="">Free Movies On Demand</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Fitness-Workouts.png" /></td>
+              <td class="">Fitness Workouts</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Fuel-TV.png" /></td>
+              <td class="">Fuel TV</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Familynet.png" /></td>
+              <td class="">Familynet</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/g4.png" /></td>
+              <td class="">G4</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm">&nbsp;</td>
+              <td class="">GAC</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/galavision.png" /></td>
+              <td class="">Galavision</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm">&nbsp;</td>
+              <td class="">GMC</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Golf-Channel.png" /></td>
+              <td class="">Golf Channel</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/GSN.png" /></td>
+              <td class="">GSN</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Gol-TV-English.png" /></td>
+              <td class="">Gol TV (English)</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Hallmark-Channel.png" /></td>
+              <td class="">Hallmark Channel</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Hallmark-Movie-Channel.png" /></td>
+              <td class="">Hallmark Movie Channel</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/HGTV.png" /></td>
+              <td class="">HGTV</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/History.png" /></td>
+              <td class="">History</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/HLN.png" /></td>
+              <td class="">HLN</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/HSN.png" /></td>
+              <td class="">HSN</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm">&nbsp;</td>
+              <td class="">Hub</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/HBO.png" /></td>
+              <td class="">HBO</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/HBO-On-Demand.png" /></td>
+              <td class="">HBO On Demand</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/HBO2.png" /></td>
+              <td class="">HBO2</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/HBO-Signature.png" /></td>
+              <td class="">HBO Signature</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/HBO-Family.png" /></td>
+              <td class="">HBO Family</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/HBO-Comedy.png" /></td>
+              <td class="">HBO Comedy</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/HBO-Zone.png" /></td>
+              <td class="">HBO Zone</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/HBO-Latino.png" /></td>
+              <td class="">HBO Latino</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/H2.png" /></td>
+              <td class="">H2</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Investigation-Discovery.png" /></td>
+              <td class="">Investigation Discovery</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/ION.png" /></td>
+              <td class="">ION</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Jewelry-Television.png" /></td>
+              <td class="">Jewelry Television</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Jewish-Life-TV.png" /></td>
+              <td class="">Jewish Life TV</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Lifetime.png" /></td>
+              <td class="">Lifetime</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm">&nbsp;</td>
+              <td class="">Live Well</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm">&nbsp;</td>
+              <td class="">LMN</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm">&nbsp;</td>
+              <td class="">Logo</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Military-Channel.png" /></td>
+              <td class="">Military Channel</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/MLB-Network.png" /></td>
+              <td class="">MLB Network</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/MSNBC.png" /></td>
+              <td class="">MSNBC</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/MTV.png" /></td>
+              <td class="">MTV</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/MTV2.png" /></td>
+              <td class="">MTV2</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/mun2.png" /></td>
+              <td class="">mun2</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/My-Network-TV.png" /></td>
+              <td class="">My Network TV</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/MTV-Hits.png" /></td>
+              <td class="">MTV Hits</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/MTV-Jams.png" /></td>
+              <td class="">MTV Jams</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/MoviePlex.png" /></td>
+              <td class="">MoviePlex</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/MGM.png" /></td>
+              <td class="">MGM</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Military-History.png" /></td>
+              <td class="">Military History</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm">&nbsp;</td>
+              <td class="">Music Channels</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Nat-Geo-Wild.png" /></td>
+              <td class="">Nat Geo Wild</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/National-Geographic.png" /></td>
+              <td class="">National Geographic</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/NBA-TV.png" /></td>
+              <td class="">NBA TV</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/NBC.png" /></td>
+              <td class="">NBC</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/NBC-Sports.png" /></td>
+              <td class="">NBC Sports Network</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/NFL-Network.png" /></td>
+              <td class="">NFL Network</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/NFL-Redzone.png" /></td>
+              <td class="">NFL Redzone</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Nick-Jr.png" /></td>
+              <td class="">Nick Jr</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Nickelodeon.png" /></td>
+              <td class="">Nickelodeon</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Nicktoons.png" /></td>
+              <td class="">Nicktoons</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/nuvoTV.png" /></td>
+              <td class="">nuvoTV</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/Nick2.png" /></td>
+              <td class="">Nick 2</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/OWN.png" /></td>
+              <td class="">OWN</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/Oxygen.png" /></td>
+              <td class="">Oxygen</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Palladia.png" /></td>
+              <td class="">Palladia</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/PBS.png" /></td>
+              <td class="">PBS</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/PBS-HD.png" /></td>
+              <td class="">PBS</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/PBS-Kids.png" /></td>
+              <td class="">PBS Kids Sprout</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/QVC.png" /></td>
+              <td class="">QVC</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/ReelzChannel.png" /></td>
+              <td class="">Reelz</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/RLTV.png" /></td>
+              <td class="">RLTV</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Science.png" /></td>
+              <td class="">Science</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/ShopNBC.png" /></td>
+              <td class="">ShopNBC</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/Speed.png" /></td>
+              <td class="">Speed</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Spike-TV.png" /></td>
+              <td class="">Spike TV</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/Style.png" /></td>
+              <td class="">Style</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Sundance.png" /></td>
+              <td class="">Sundance Channel</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/Syfy.png" /></td>
+              <td class="">Syfy</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Sun-Sports.png" /></td>
+              <td class="">Sun Sports</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Soapnet.png" /></td>
+              <td class="">Soapnet</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Showtime-Women.png" /></td>
+              <td class="">Showtime Women</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Showtime.png" /></td>
+              <td class="">Showtime</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Showtime2.png" /></td>
+              <td class="">Showtime 2</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Showtime-Family.png" /></td>
+              <td class="">Showtime Family</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Showtime-Next.png" /></td>
+              <td class="">Showtime Next</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Showtime-Showcase.png" /></td>
+              <td class="">Showtime Showcase</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Showtime-Beyond.png" /></td>
+              <td class="">Showtime Beyond</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Showtime-Extreme.png" /></td>
+              <td class="">Showtime Extreme</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/Starz.png" /></td>
+              <td class="">Starz</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Starz-in-Black.png" /></td>
+              <td class="">Starz in Black</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Starz-Cinema.png" /></td>
+              <td class="">Starz Cinema</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Starz-Comedy.png" /></td>
+              <td class="">Starz Comedy</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Starz-Edge.png" /></td>
+              <td class="">Starz Edge</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Starz-Kids-Family.png" /></td>
+              <td class="">Starz Kids &amp; Family</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/TBS.png" /></td>
+              <td class="">TBS</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/TCM.png" /></td>
+              <td class="">TCM</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Teennick.png" /></td>
+              <td class="">Teennick</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/The-Weather-Channel.png" /></td>
+              <td class="">The Weather Channel</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/TLC.png" /></td>
+              <td class="">TLC</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/TNT.png" /></td>
+              <td class="">TNT</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/Tr3s.png" /></td>
+              <td class="">Tr3s</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Travel-Channel.png" /></td>
+              <td class="">Travel Channel</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/truTV.png" /></td>
+              <td class="">truTV</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/TV-Land.png" /></td>
+              <td class="">TV Land</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/TV-One.png" /></td>
+              <td class="">TV One</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/TVGN.png" /></td>
+              <td class="">TVGN</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/The-Movie-Channel.png" /></td>
+              <td class="">The Movie Channel</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/The-Movie-Channel-Xtra.png" /></td>
+              <td class="">The Movie Channel Xtra</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Tennis-Channel.png" /></td>
+              <td class="">Tennis Channel</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/USA.png" /></td>
+              <td class="">USA</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Univision.png" /></td>
+              <td class="">Univision</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Universal.png" /></td>
+              <td class="">Universal</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/UniMas.png" /></td>
+              <td class="">UniMas</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/V-me.png" /></td>
+              <td class="">V-me</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Velocity.png" /></td>
+              <td class="">Velocity</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/VH1.png" /></td>
+              <td class="">VH1</td>
+              <td align="center"><strong class="title1">HD</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/VH1-Classic.png" /></td>
+              <td class="">VH1 Classic</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img src="widgetassets/img/channels-logos/WE-tv.png" /></td>
+              <td class="">WE tv</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/Weatherscan.png" /></td>
+              <td class="">Weatherscan</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td align="center"><i class="fa fa-check icon-large"></i></td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/XFINITY-Latino.png" /></td>
+              <td class="">XFINITY Latino</td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+            <tr class="bg1">
+              <td class="hidden-sm"><img
+								src="widgetassets/img/channels-logos/XFINITY-3D.png" /></td>
+              <td class="">XFINITY 3D <em class="fontsize11">*3D TV Req</em></td>
+              <td align="center"><strong class="title1">&nbsp;</strong></td>
+              <td align="center">&nbsp;</td>
+              <td align="center">&nbsp;</td>
+              <td class="" align="center"><i class="fa fa-check icon-large"></i></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="mb0"> <span class="help-block">* Channel lineups subject to change and may vary per
+          regions. Availability of High Definition (HD) programming subject to area. Additional HD equipment may be required. </span> </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+
+<!-- Modal Edit Address -->
+<div class="modal fade" id="address-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog   modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Edit your address</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Street Address*">
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Apt#">
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Zip Code*">
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="form-group text-center mb0"> <a href="results1.html">
+              <button type="button" class="btn btn-primary btn-lg op">Show me the Deals</button>
+              </a> </div>
+          </div>
+          <!-- /col --> 
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /modal-body --> 
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal COMPARE -->
+<div class="modal fade" id="compare-modal"tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog   modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Compare Selected Plans</h4>
+      </div>
+      <div  id="centurylink" class="modal-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+      
+       <!-- plan1 -->
+            <div id="plan1" class="col-md-4">
+              <div class="box-1">
+                <div class="box-1-inner clearfix">
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12   sameHeight1">
+                    <div class="CTL planlogo"><img class="desaturate" src="widgetassets/img/logo-centurylink.png"></div>
+                    <h3 class="">Starter TV with HBO &amp; Extreme Internet (30Mbps)</h3>
+                    <div class="icons1"> <img height="18" src="widgetassets/img/ico-tv1.png"> <img height="9" src="widgetassets/img/ico-plus1.png"> <img height="20" src="widgetassets/img/ico-internet1.png"> </div>
+                  </div>
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12 "> 
+                    <!--<h4><span>Features / Promos</span></h4> -->
+                    <ul class="bullet-2 features  sameHeight3">
+                      <li><i class="fa fa-circle"></i>20+ Channels incl. HD</li>
+                      <li><i class="fa fa-circle"></i>Speeds up to 30 Mbps</li>
+                      <li><i class="fa fa-circle"></i>Home WiFi</li>
+                    </ul>
+                    <h4><span>Promotions</span></h4>
+                    <ul class="bullet-2 promos  sameHeight2">
+                      <li><i class="fa fa-check"></i>$50 Visa<sup>&reg;</sup> Rewards Card</li>
+                      <li><i class="fa fa-check"></i>Includes HBO &amp; HBO GO</li>
+                    </ul>
+                  </div>
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12  ">
+                    <h6 class="sameHeight5"> <span class="i1">only</span> <span class="i2">79<sup>99</sup></span> <span class="i3">per mo. for 12 mo.</span> </h6> 
+<p class="text-center"><a class="btn  btn-med   btn-primary" href="customize-service.html">Order Now &nbsp;<i class="fa fa-chevron-right"></i></a> <a class="btn  btn-med   btn-primary2" href="customize-service.html">More from XFINITY</a></p>
+
+                  </div>
+                </div>  <!-- /box-1-inner --> 
+ 
+              </div>
+              <!-- /box-1 --> 
+            </div>
+            <!-- /col --> 
+            
+            <!-- plan2 -->
+            <div class="col-md-4">
+              <div class="box-1">
+                <div class="box-1-inner clearfix">
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12 sameHeight1">
+                    
+                     <!-- available  twc, att, comcast, cox, verizon, centurylink, charter, brighthouse, DTV, exede -->
+                    <div class="CTL planlogo"><img src="widgetassets/img/logo-centurylink.png"></div>
+                    
+                    <h3 class="">Preferred TV, Turbo Internet (20 Mbps) &amp; Home Phone National</h3>
+                    <div class="icons1"> <img height="18" src="widgetassets/img/ico-tv1.png"> <img height="9" src="widgetassets/img/ico-plus1.png"> <img height="20" src="widgetassets/img/ico-internet1.png"> <img height="9" src="widgetassets/img/ico-plus1.png"> <img height="28" src="widgetassets/img/ico-phone1.png"> </div>
+                  </div>
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12 ">
+                   <!-- <h4><span>Features</span></h4>-->
+                    <ul class="bullet-2 features  sameHeight3">
+                      <li><i class="fa fa-circle"></i>200+ Channels  incl. HD DVR Service</li>
+                      <li><i class="fa fa-circle"></i>Speeds up to 20 Mbps</li>
+                      <li><i class="fa fa-circle"></i>Unlimited Nationwide Calling</li>
+                    </ul>
+                    <h4><span>Promotions</span></h4>
+                    <ul class="bullet-2 promos  sameHeight2">
+                      <li><i class="fa fa-check"></i>Free HBO<sup>&reg;</sup>, Cinemax<sup><sup>&reg;</sup></sup>, Showtime<sup>&reg;</sup> &amp;The Movie Channel<sup>&trade;</sup> for 3 mos.*</li>
+                    </ul>
+                  </div>
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12">
+                    <h6 class="sameHeight5"> <span class="i1">only</span> <span class="i2">119<sup>99</sup></span> <span class="i3"> per mo. for 12 mos.</span> 
+                      <!--<span class="i3"> with 2 year term</span> 
+                                            <span class="i4">Was <strike>$129.97</strike></span>--> 
+                    </h6> 
+<p class="text-center"><a class="btn  btn-med   btn-primary" href="customize-service.html">Order Now &nbsp;<i class="fa fa-chevron-right"></i></a> <a class="btn  btn-med   btn-primary2" href="customize-service.html">More from XFINITY</a></p>
+ 
+                  </div>
+                </div><!-- /box-1-inner --> 
+ 
+              </div>
+              <!-- /box-1 --> 
+            </div>
+            <!-- /col --> 
+            
+            <!-- plan3 -->
+            <div class="col-md-4">
+              <div class="box-1 popular">
+                <div class="box-1-inner popular  clearfix">
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12 sameHeight1">
+                    
+                     <!-- available  twc, att, comcast, cox, verizon, centurylink, charter, brighthouse, DTV, exede -->
+                    <div class="CTL planlogo"><img src="widgetassets/img/logo-centurylink.png"></div>
+                    
+                    <h3 class="">Preferred TV, Standard Internet (15 Mbps) &amp; Home Phone National</h3>
+                    <div class="icons1"> <img height="18" src="widgetassets/img/ico-tv1.png"> <img height="9" src="widgetassets/img/ico-plus1.png"> <img height="20" src="widgetassets/img/ico-internet1.png"> </div>
+                  </div>
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12"> 
+                     <!--<h4><span>Features / Promos</span></h4>--> 
+                    <ul class="bullet-2 features  sameHeight3">
+                      <li><i class="fa fa-circle"></i>200+ Channels including HD</li>
+                      <li><i class="fa fa-circle"></i>Speeds up to 15 Mbps</li>
+                      <li><i class="fa fa-circle"></i>Unlimited Nationwide Calling</li>
+                      <!--  <a class="showAllFeat" id="showAllFeat" onclick="showAllFeat(this);" >[+] More</a>-->
+                    </ul>
+                    <h4><span>Promotions</span></h4>
+                    <ul class="bullet-2 promos  sameHeight2">
+                      <li><i class="fa fa-check"></i>$100 Visa<sup>&reg;</sup> Rewards Card</li>
+                      <li><i class="fa fa-check"></i>Add HBO<sup>&reg;</sup>/Cinemax<sup>&reg;</sup> for $14.99/mo. for 3 months</li>
+                    </ul>
+                  </div>
+                  <div class="horizontal col-xs-12 col-sm-12 col-md-12">
+                    <h6 class="sameHeight5"> <span class="i1">only</span> <span class="i2">99<sup>99</sup></span> <span class="i3">per mo. for 12 month</span> 
+                      <!--<span class="i3"> with 2 year term</span> 
+                                            <span class="i4">Was <strike>$129.97</strike></span>--> 
+                    </h6> 
+<p class="text-center"><a class="btn  btn-med   btn-primary" href="customize-service.html">Order Now &nbsp;<i class="fa fa-chevron-right"></i></a> <a class="btn  btn-med   btn-primary2" href="customize-service.html">More from XFINITY</a></p>
+
+                  </div>
+
+                </div> <!-- /box-1-inner --> 
+               </div>
+              <!-- /box-1 --> 
+            </div>
+      
+      
+      
+      
+          </div>
+          <!-- /col --> 
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /modal-body --> 
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal DETAILS  -->
+<div  class="modal fade twc" id="details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4>$79.99 El Paquetazo+Standard Internet+Teléfono</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+ 
+
+            <div class="offer_detail_main">
+                <p>Cámbiate ahora a El Paquetazo&reg; Triple Play por $79.99 al mes por 12 meses</p>
+                <span class="offer_add" onclick="addToCart('TP504', 'BundledOffer');" data-offer-index="0">Selecciona <i class="fa fa-chevron-right"></i></span> 
+            </div>
+
+
+          <h4 class="detail_features"><i class="fa fa-star"></i> Características</h4>
+              <ul class="offer_detail_features">
+                <li>Más de 220 canales en español e inglés incluyendo muchos en Alta Definición, GRATIS</li>
+                <li>Standard Internet con velocidades hasta 15 Mbps con Bloqueo Parental y antivirus, GRATIS</li>
+                <li>Además, llama a más de 40 países por sólo 1¿ el minuto; incluyendo México, Argentina, Perú, España, y Venezuela ¡Y ahora a la República Dominicana!</li>
+                <li>Disfruta de llamadas nacionales ilimitadas incluyendo Puerto Rico y Canadá, con Correo de Voz incluido.</li>
+              </ul>
+              
+         <h4 class="detail_pricing"><i class="fa fa-tags"></i> Precio</h4>
+              <ul class="offer_detail_pricing">
+                <li data-pricetype="Price">Precio: $79.99 - Al Mes</li>
+                <li data-pricetype="InstallPrice">Cargo por Instalación: $14.95 - Único</li>
+                <li data-pricetype="HardwarePrice">Cargo por Equipo: $8.00 - Al Mes</li>
+              </ul>
+          
+
+
+<div class="offer_services">
+    
+    <div class="offer_details_module">
+      <h4><i class="fa fa-laptop fa-6"></i> Información de Internet</h4>
+      <ul>
+        <li>Velocidad de Descarga: 15/Mbps</li>
+        <li>Velocidad de Carga: 1/Mbps</li>
+        <li>Direcciones de IP Dinámicas: 1</li>
+        <li>Direcciones de IP Estáticas: 0</li>
+        <li>Cuentas de Correo Electrónico: 10</li>
+        <li>Espacio Disponible en la Red: 0 MB</li>
+        <li class="boolean_list_false">Conección por Marcado Disponible</li>
+        <li>Requirimientos del Sistema: <br>
+Requisitos residenciales: Sistema operativo: Windows XP, Vista, 7 (sólo la versión de 32 bit), OS X 10.5 (Leopard), 10.6 (Snow Leopard). Procesador: Pentium (o equivalente) 450 MHz (800 MHz o más recomendado), G3 o más, o Intel. Memoria (RAM): 128 MB, (256 MB recomendada). Espacio libre en disco duro: 300 MB (500 MB recomendado). Capacidad de red: tarjeta Ethernet con conector RJ45 o puerto USB abierto. Navegador: Internet Explorer 7.x / 8.x, Firefox 2.x / 3.x, Safari 3.x / 4.x. Otro: se requiere unidad de CD/DVD, se recomienda tarjeta de sonido y altavoces. Notas: Road Runner le brindará soporte, de la mejor manera posible, a otras versiones de navegadores y sistemas operativos y no garantiza un rendimiento óptimo. Tenga en cuenta que el sistema de su computadora, así como ciertos servicios de banda ancha, pueden requerir otros recursos adicionales a los estándares mínimos de Road Runner. Puede que no estén disponibles todos los servicios dependiendo del sistema operativo/navegador. 
+        </li>
+      </ul>
+    </div>
+    
+    
+    <div class="offer_details_module">
+      <h4><i class="fa fa-video-camera"></i> Información de TV</h4>
+      <ul>
+        <li>Canales Incluidos: Hasta 150</li>
+        <li>Canales HD: 0</li>
+        <li>Canales Premium: 0</li>
+      </ul>
+    </div>
+    
+    
+    
+    <div class="offer_details_module">
+      <h4><i class="fa fa-phone"></i> Información de Teléfono</h4>
+      <ul>
+        <li>Minutos de larga distancia: Unlimited</li>
+        <li>Cargos por larga distancia: $0</li>
+        <li class="boolean_list_true">Identificador de Llamada</li>
+        <li class="boolean_list_true">Llamada en Espera</li>
+        <li class="boolean_list_true">Identificador de Llamada con Llamada en Espera</li>
+        <li class="boolean_list_true">Llamada entre 3</li>
+        <li>
+          <div>Correo de Voz: 3.95/Al Mes</div>
+          <p style="text-align:justify;">Asegurate de recibir tus llamadas cuando estes fuera y no puedas contestar el teléfono. No se requiere equipo adicional y es a bajo precio. Disponibilidad y precios pueden variar en cada mercado.</p>
+        </li>
+        <li>
+          <div>Línea Adicional: $29.95/Al Mes</div>
+          <p style="text-align:justify;">Ahora puedes agregar una segunda línea a tu servicio de Teléfono Digital. La segunda línea del Teléfono incluye las mismas funciones y beneficios que distrutas actualmente con tu primera línea.</p>
+        </li>
+        <li>
+          <div>Llamadas Internacionales: $19.95/Al Mes</div>
+          <p style="text-align:justify;">Cargos por llamadas internacionales:Global Penny Phone Plan, llamadas globales incluidas por 12 meses al suscribirse a Triple Play. Después del periodo promocional un cargo mensual de $2.95 aplicará.</p>
+        </li>
+      </ul>
+    </div>
+</div>
+  
+  
+<div class="offer_details_module offer_disclaimer">
+    <h4>Aviso legal:</h4>
+    <p>La garantía de devolución de dinero de treinta días se aplica a una instalación estándar y a los cargos mensuales de servicio solamente. Se requiere la devolución de todos los equipos arrendados para emitir el reembolso. Se requiere el arrendamiento o la compra de un módem aprobado para el servicio de Internet. Los módems actualmente aprobados pueden encontrarse en www.twc.com/approveddevices.  La oferta vence el 03/31/2015 y está disponible para clientes residenciales nuevos o existentes que tengan Single Play (TV, Internet o Teléfono) que no estén suscriptos en la actualidad a los servicios requeridos. La oferta no puede combinarse. La oferta de servicio de DVR y las ofertas de canales premium no son válidas para clientes que actualmente estén suscritos a estos servicios. Se aplican cargos adicionales por equipos, instalación, impuestos y tarifas, cargos por activación, Asistencia de Directorio, Servicios con Operadora y llamadas internacionales. Después del periodo promocional se aplicarán tarifas mensuales regulares. Para recibir todos los servicios, se requiere tener TV Digital, remoto y arrendar una caja decodificadora digital. Algunos servicios no están disponibles para los clientes de CableCARD. No todos los servicios podrían estar disponibles en todas las áreas. No todos los equipos son compatibles con todos los servicios. Las velocidades reales pueden variar. Por favor, tener en cuenta que la factura podrá incluir una cargo de difusión de TV que costea el aumento de los costos impuestos por los canales. Sujeto a cambio sin previo aviso. Ciertas restricciones se aplican. Time Warner Cable y el logotipo del ojo y la oreja son marcas comerciales de Time Warner Inc. Usadas bajo licencia. Todas las otras marcas comerciales son propiedad de sus respectivos dueños. &copy;2015 Time Warner Cable Inc. Todos los derechos reservados.</p>
+  </div>
+        
+        </div>
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /modal-body --> 
+    </div>
+  </div>
+</div>
+
+
+ 
+                      
+<!-- Modal Features -->
+<div class="modal fade" id="feature-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Features &amp; Promotions</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                   <div class="popover-content">
+                                    <h5>Features</h5>
+                                    <ul class="bullet-2 features">
+                                      <li><i class="fa fa-circle"></i>200+ Channels including HD</li>
+                                      <li><i class="fa fa-circle"></i>Speeds up to 15 Mbps</li>
+                                      <li><i class="fa fa-circle"></i>Unlimited Nationwide Calling</li>
+                                     </ul>
+                                    <h5>Promotions</h5>
+                                    <ul class="bullet-2 promos ">
+                                      <li><i class="fa fa-check"></i>$100 Visa<sup>&reg;</sup> Rewards Card</li>
+                                      <li><i class="fa fa-check"></i>Add HBO<sup>&reg;</sup>/Cinemax<sup>&reg;</sup> for $14.99/mo. for 3 months</li>
+                                    </ul>
+                    </div>
+          </div>
+          <!-- /col -->
+ 
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /modal-body --> 
+    </div>
+  </div>
+</div>
+                      
+
+
+                      
+<!-- Modal Vivint Details -->
+<div class="modal fade" id="vivintdetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+<!--      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Features &amp; Promotions</h4>
+      </div>-->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+ 				<p>
+                *60 month monitoring agreement (48 months in AR, WI, or CA total fees from $2,591.52) at minimum $53.99/month. Up to $198 activation fee may apply, home ownership, and satisfactory credit history required. Taxes and permit fees may apply. Services not available in all areas. Offer valid for new customers only. Package includes 7" touchscreen Vivint Sky panel and 7 points of customizable security equipment. Additional equipment may be added for a fee and larger packages are available. Speak to a representative for complete equipment and package details and pricing. Services not available in all areas. Services in Louisiana performed by Vivint Louisiana Commercial Certificate #58280. 
+                </p>
+          </div>
+          <!-- /col -->
+ 
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /modal-body --> 
+    </div>
+  </div>
+</div>
+                      
+
+
+
+
+<!-- Modal service-na Details -->  <!-- available  twc, att, comcast, cox, verizon, centurylink, charter, brighthouse, DTV , exede -->
+<div class="modal fade twc" id="service-na" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+<!--      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Features &amp; Promotions</h4>
+      </div>-->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+ 				<p>PROVIDER NAME is not available at your address.</p>
+                <p>We found services  available in your area from the following provider(s).</p>
+                <div class="planlogo"><img src="widgetassets/img/logo-centurylink.png" class="desaturate"></div>
+          </div>
+          <!-- /col -->
+ 
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /modal-body --> 
+      <div class="modal-footer">
+        <p>Please wait... while we redirect you.</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,75 @@
+/* Large desktop */
+@media (min-width: 1200px) { 
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {		
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	header .container-content {  }
+	header #logo { float:none; margin:0px auto; margin-bottom:20px; }
+	header .box-call-top { float:none; text-align:center; }
+	
+	.breadcrumb1.breadcrumb > li { padding-top:16px; padding-bottom:16px; display:block; }
+	 .breadcrumb1.breadcrumb li:first-child {border-radius:5px 5px 0 0  ;}
+	 .breadcrumb1.breadcrumb li:last-child {border-radius: 0 0 5px 5px ;}
+
+.breadcrumb.breadcrumb1 li{
+	 
+    margin-right: 0;
+ }
+
+.breadcrumb1.breadcrumb li:first-child span:before {display:none;}
+
+.breadcrumb.breadcrumb1 li span:before {
+     display:none;
+}
+.breadcrumb.breadcrumb1 li span:after {
+     display:none;
+}
+
+
+.breadcrumb.breadcrumb1 li.active span:before {
+    display:none;
+}
+.breadcrumb.breadcrumb1 li.active span:after {
+   display:none;
+}
+
+	
+	.pt8.d { padding-top:0; }
+		
+	footer .container-content { padding-left:10px; padding-right:10px; }
+	footer .botNav,
+	footer .copyright { float:none; text-align:center; }
+	
+#offer_filter li{width:100%; border-bottom:1px solid #ccc; border-top:1px solid #fff;}	
+#offer_filter li{ background: none repeat scroll 0 0 #f2f2f2; }
+#offer_filter li:hover, #offer_filter li.active {color:#fff;  background: none repeat scroll 0 0 #5cb85c; }
+.stepwrap {display:none}	
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.box-5 { text-align:center; }
+	.box-5 h6 { padding:14px 0 240px 0; }
+	.box-1 .horizontal.col-md-3 .planlogo, 
+.box-1 .horizontal.col-md-3 h3, 
+.box-1 .horizontal.col-md-3 .icons1,
+.box-1 .horizontal.col-md-3 h4
+    {text-align:center;}
+	
+.box-1 .horizontal.col-md-3  h4 span {padding:0 20px }
+.box-5-inner { padding:0 0 10px 0; }
+.box-5 { background:none; }
+	 
+}
+
+/* Landscape phones and down */
+@media (max-width: 320px) { 
+}

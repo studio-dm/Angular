@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FUSE- Customize Service</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="widgetassets/css/bootstrap.css" rel="stylesheet">
+<link href="widgetassets/css/base.css" rel="stylesheet"> 
+<link href="widgetassets/css/base-responsive.css" rel="stylesheet"> 
+<link href="widgetassets/css/theme.css" rel="stylesheet">
+ <link href="widgetassets/css/fonts.css" rel="stylesheet"> 
+<link href="widgetassets/css/font-awesome.css" rel="stylesheet"> 
+
+<!--[if lt IE 9]>
+	<script src="widgetassets/js/html5shiv.js"></script>
+	<script src="widgetassets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body  id="CTL">
+
+<header>
+  <div class="container">
+    <div class="container-content clearfix">
+         <div class="col-xs-12 col-sm-12 col-md-6">
+    		<div class="clearfix" id="logoLink"><p id="logo">Time Warner Cable</p></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+		<div class="box-call-top">
+        	<p class="txt1 hidden-xs">Order by phone<br><span class="strPhone" id="strPhone">844-517-3376</span></p>
+	        <p class="mobtxt1 visible-xs"><a class="btn btn-primary op" href="tel:844-517-3376" style="opacity: 1;"><i class="fa fa-phone"></i>&nbsp; Click to call</a></p>
+    	    <p class="txt2 hidden-xs">Mon-Fri 7AM - 1AM | Sat - Sun 7AM-11PM EST</p>
+		</div>
+        </div>
+	</div>
+  </div>
+</header>
+
+
+
+<div class="wrap-container">
+    <section  class="stepwrap">
+    <div class="container">
+          <div class="col-md-12">
+             <ol class="breadcrumb breadcrumb1">
+             <!--<li class="steps"><span>Order Progress</span></li>-->
+              <li><span>1. Select Plan</span></li>
+              <li class="active"><span>2. Customize Service</span></li>
+              <li><span>3. Billing & Installation</span></li>
+              <li class="cartstatus pull-right hidden-xs hidden-sm"><a><strong>1</strong> &nbsp;<i class="fa fa-shopping-cart fa-lg"></i> &nbsp;View Cart </a></li>
+            </ol>
+          </div>
+      </div>
+    </section>
+
+
+  <section class="main-content">
+     <div class="container container-content clearfix">
+     <div class="col-md-12"><p class="count">Showing plans available at <span class="address">5831 pine ridge circle, Vero Beach, FL, 32965</span> &nbsp;<a data-target="#address-modal" data-toggle="modal" href="#" class="small">edit</a></p></div>
+      
+      <div class="col-xs-12 col-sm-12 col-md-9">
+      <div class="box-2">
+       <div class="box-2-inner clearfix">
+        <h4>Customer Information</h4>
+        <div class="clearer">&nbsp;</div>
+        <div class="row">
+         <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+           <label class="sr-only">First Name</label>
+           <input type="text" class="form-control" placeholder="First Name">
+          </div>
+         </div><!-- /col -->
+         <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+           <label class="sr-only">Last Name</label>
+           <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+         </div><!-- /col -->
+         <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+           <label class="sr-only">Email Address</label>
+           <input type="text" class="form-control" placeholder="Email Address">
+          </div>
+         </div><!-- /col -->
+         <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+           <label class="sr-only">Confirm Email Address</label>
+           <input type="text" class="form-control" placeholder="Confirm Email Address">
+          </div>
+         </div><!-- /col -->
+         <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+           <label class="sr-only">Phone Number</label>
+           <input type="text" class="form-control" placeholder="Phone Number">
+          </div>
+         </div><!-- /col -->
+         <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="checkbox color3">
+           <label><input type="checkbox"> <small>This is a cellphone number. Yes, I would like to receive activation, installation, and promotional messages. 
+I have read and accepted the <a data-toggle="modal" data-target="#terms">Terms and Conditions</a> and can opt-out at any time.</small></label>
+          </div>
+         </div><!-- /col -->
+        </div><!-- /row -->
+       </div><!-- /box-2-inner -->
+      </div><!-- /box-2 -->
+      
+ 
+      
+       
+      <div class="clearer h10">&nbsp;</div>
+
+ 
+      
+      
+ <!-- Options for spanish-->     
+ 
+<!--      <div class="box-2 box-2-alt">
+       <div class="box-2-inner clearfix">
+        <h4>Personaliza tu orden</h4>
+        <div class="clearer">&nbsp;</div>
+        <div class="row">
+        <fieldset>
+          <table class="table table1">
+              <th colspan="2">Would you like to add DVR service?</th>
+              
+              <tr>
+                  <td><label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0">Add DVR Service &nbsp; 
+                       <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."><i class="fa fa-info-circle"></i></a></label>
+                   </td>
+                  <td class="text-right">$12.95 Monthly</td>
+                  
+              </tr>
+              <tr>
+                  <td><label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">Add DVR Service &nbsp; <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."><i class="fa fa-info-circle"></i></a></label></td>
+                  <td class="text-right">$12.95 Monthly</td>
+              </tr>
+              
+          </table>
+          </fieldset>
+          
+          <fieldset>
+          <table class="table table1">
+              <th colspan="2">How many televisions would you like activated?</th>
+              
+              <tr>
+                  <td><label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0">2 TVs included &nbsp; <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."><i class="fa fa-info-circle"></i></a></label></td>
+                  <td class="text-right">$12.95 Monthly</td>
+              </tr>
+              <tr>
+                  <td><label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">3 TVs &nbsp; <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."><i class="fa fa-info-circle"></i></a></label></td>
+                  <td class="text-right">$12.95 Monthly</td>
+              </tr>
+              
+               <tr>
+                  <td><label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">4 TVs &nbsp; <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."><i class="fa fa-info-circle"></i></a></label></td>
+                  <td class="text-right">$12.95 Monthly</td>
+              </tr>
+              
+               <tr>
+                  <td><label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">5 TVs &nbsp; <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."><i class="fa fa-info-circle"></i></a></label></td>
+                  <td class="text-right">$12.95 Monthly</td>
+              </tr>
+          </table>
+          </fieldset>
+          
+          
+         <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="checkbox color3">
+           <label><input type="checkbox"> <small>This is a cellphone number. Yes, I would like to receive activation, installation, and promotional messages. 
+I have read and accepted the <a data-toggle="modal" data-target="#terms">Terms and Conditions</a> and can opt-out at any time.</small></label>
+          </div>
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+ 
+      -->
+       
+      <div class="clearer h10">&nbsp;</div>     
+      
+      
+
+        
+<!-- trust logos-->     
+ 
+      <div class="box-2 box-2-trust hidden-sm">
+       <div class="box-2-inner clearfix">
+          <h6><span>Your transaction is safe and secure</span></h6>
+          <div class="row">
+
+         <ul>
+         <li><img src="widgetassets/img/trustlogos/ico-mcafee.png"   alt=""/></li>
+         <li><img src="widgetassets/img/trustlogos/ico-pci.png"   alt=""/></li>
+         <li><img src="widgetassets/img/trustlogos/ico-verifysecure.png" alt=""/></li>
+         <li><img src="widgetassets/img/trustlogos/ico-truste.png" alt=""/></li>
+         <li><img src="widgetassets/img/trustlogos/ico-authnet.png"  alt=""/></li>
+         </ul>
+        
+          
+
+        </div><!-- /row -->
+       </div><!-- /box-2-inner -->
+      </div><!-- /box-2 -->
+      
+ 
+      
+       
+      <div class="clearer h10">&nbsp;</div>
+      
+      
+      
+<!--  <div class="row">
+      <div class="cart col-xs-12 col-sm-12 col-md-5 "><a href="installation.html" class="btn btn-lg btn-primary btn-block">Continue &nbsp; <i class="fa fa-chevron-right"></i></a></div>
+ </div>-->
+     
+ <!-- END Options-->  
+
+       <div class="clearer h20">&nbsp;</div>
+     </div><!-- END col-md-9-->  
+     
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <div class="box-3 cart">
+          <div class="box-3-inner clearfix">
+            <h3>Shopping Cart <i class="fa fa-shopping-cart fa-lg pull-right"></i></h3>
+            <table class="table  table3">
+              <tbody>
+                <!--          <tr class="no-b bg1">
+                                   <td colspan="2"><h4>Monthly Charges</h4></td>
+                                  </tr>-->
+                <tr>
+                  <td>Preferred TV, Basic Internet (3 Mbps) &amp; Home Phone National</td>
+                  <td class="text-right"><div class="txt1"><strong>$119.99</strong> <br>
+                      <a class="link2" href="#">Remove</a></div></td>
+                </tr>
+                <tr class="bg2">
+                  <td><div class="txt2">Total Monthly Charges</div></td>
+                  <td class="text-right"><div class="txt3"><strong>$119.99</strong></div></td>
+                </tr>
+<!--                <tr>
+                  <td colspan="2" class="text-right"><a data-toggle="collapse" class="link1 collapsed" href="#more1">Details</a> »
+                    <p class="cartsmall collapse" id="more1" style="height: 0px;"> YOU WILL BE ABLE TO SELECT EQUIPMENT, MODIFY YOUR ORDER and schedule installation at checkout. *Programming, pricing and offers are subject to change and may vary in certain markets. Some offers may not be available through all channels and in select areas. </p></td>
+                </tr>-->
+              </tbody>
+            </table>
+            
+            <div class="col-xs-12 col-sm-12 col-lg-12 mb10">
+                <a data-toggle="collapse" class="link1 collapsed mb10" href="#more1"><i class="fa fa-plus-square-o"></i> Details</a>
+                <p class="cartsmall collapse" id="more1" > YOU WILL BE ABLE TO SELECT EQUIPMENT, MODIFY YOUR ORDER and schedule installation at checkout. *Programming, pricing and offers are subject to change and may vary in certain markets. Some offers may not be available through all channels and in select areas. </p></td>
+            </div>  
+            <div class="col-xs-12 col-sm-4 col-lg-4">
+                <a class="btn btn-style1 btn-lg btn-block op" onclick="previousPage();" href="step1.html" style="opacity: 1;">Back</a> 
+           </div>
+            <div class="col-xs-12 col-sm-8 col-lg-8">
+                     <a class="btn btn-lg btn-primary btn-block" href="installation.html">Continue &nbsp; <i class="fa fa-chevron-right"></i></a> 
+            </div>          </div>
+          <!-- /box-3-inner --> 
+        </div>
+        
+<!--   Toggle FAQ spanish
+        <div class="box-3 box-faq mt20">
+          <div class="box-3-inner clearfix">
+            <h3>Consejos Útiles <i class="fa fa-info-circle fa-lg pull-right"></i></h3>
+ 
+            <div class="col-xs-12 col-sm-12 col-lg-12 bordertop">
+                <a data-toggle="collapse" class="faqlink collapsed mb10" href="#faq1"><i class="fa fa-angle-right"></i>¿Por qué necesitan mi dirección de correo electrónico?</a>
+                <p class="cartsmall collapse" id="faq1" >Tu dirección de correo electrónico sólo se usa para mantenerte informado de las actualizaciones de tu orden. También se usará para confirmar detalles de tu orden junto con un número de contacto en caso de que tengas preguntas. Y si quieres activar la opción para recibir correos electrónicos de Time Warner Cable con información sobre ofertas especiales, noticias y eventos locales, entonces marca la casilla correspondiente.</p> 
+            </div> 
+            
+            <div class="col-xs-12 col-sm-12 col-lg-12 bordertop">
+                <a data-toggle="collapse" class="faqlink  collapsed mb10" href="#faq2"><i class="fa fa-angle-right"></i>¿Qué sucede cuando selecciono el botón de "Finalizar" en esta página?</a>
+                <p class="cartsmall collapse" id="faq2" >Tu orden por Internet se completará. La página siguiente te dará un número de orden de confirmación y un número de teléfono para que llames y nos suministres tu información de facturación y programes la instalación.</p> 
+            </div>   
+            
+ 
+          </div>
+            
+        </div>   -->     
+        
+        <div class="messagebox">
+          <h4>Have questions about selecting the right  plan?</h4>
+          <p>Speak to an authorized agent now.<br>
+            Call toll-free  &nbsp;<span><i class="fa fa-phone-square"></i> 1-888-123-1234 </span> </p>
+ 
+        </div>
+      </div><!-- /box-3 -->
+    </div><!-- /container-content -->
+  </div><!-- /container -->
+ </section>
+ 
+ 
+ 
+ <footer>
+  <div class="container">
+   <div class="container-content clearfix">
+    <div class="copyright">&copy; 2015 Bridgevine, All Rights Reserved</div>
+   </div><!-- /container-content -->
+  </div><!-- /container -->
+ </footer>
+   
+</div><!-- /wrap-container -->
+
+
+<!-- Modal Edit Address -->
+<div class="modal fade" id="address-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog   modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Edit your address</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Street Address*">
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Apt#">
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Zip Code*">
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="form-group text-center mb0"> <a href="results1.html">
+              <button type="button" class="btn btn-primary btn-lg op">Show me the Deals</button>
+              </a> </div>
+          </div>
+          <!-- /col --> 
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /modal-body --> 
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+ 
+      <div class="modal-body">
+                      <p>By checking the consent box, customer agrees that they are digitally signing an agreement to accept text messaging and that they can opt out of the agreement at any time. To opt-out of text messaging, reply STOPMCAJOIN to any message or contact customer support at mca.support@bridgevine.com. For help concerning text messaging, reply HELP to any message or contact customer support at mca.support@bridgevine.com.</p>
+            <p>We will send up to 5 text messages per month to all participating users of our text messaging program. Messages may include alerts, updates, contests, special offers or advertising. All messages will conform to the MMA Code of Conduct and will be tailored to the interest of the users of our site. Message and data rates may apply.</p>
+            <p>The recommendations of the Mobile Marketing Association (the “MMA”) Global Code of Conduct and Consumer Best Practices for Messaging in their SSM program.</p>
+            <p>1. Notice &ndash; we will inform users of the marketers identity or products and services offered and the key terms and conditions that govern an interaction between the marketer and the users mobile device.
+            <br>
+            <br>
+            2.	Choice &amp; Consent &ndash; We respect the right of the user to control which mobile messages they receive by obtaining consent (opt-in) and implementing a simple termination (opt-out) process.
+            <br>
+            <br>
+            3.	Customization &amp; Constraint &ndash; We ensure that collected user information is used to tailor communication to the interests of the recipient and is handled responsibly, sensitively and in compliance with applicable law. Mobile messages should be limited to those requested by the user and provide value such as product and service enhancements, contests, requested information, entertainment or discounts.
+            <br>
+            <br>
+            4.	Security - We implement reasonable technical, administrative and physical procedures to protect user information from unauthorized use, alteration, disclosure, distribution, or access.
+            <br>
+            <br>
+            5.	Enforcement &amp; Accountability &ndash; We will make every attempt to comply with the MMA Privacy Code of Conduct and has incorporated the Code into applicable MMA Guidelines, including the U.S. Consumer Best Practice (CBP) Guidelines. MyChangeAddress continually uses evaluations of their practices to certify compliance with the Code.</p>
+            <p>For more information on your privacy, please read our privacy policy.</p>
+            <p>For more information on text messaging program, please contact customer support at mca.support@bridgevine.com.</p>
+            <p>To learn more about the MMA Global Code of Conduct and Consumer Best Practices for Messaging, please visit their site at http://www.mmaglobal.com/.</p>
+      </div><!-- /modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div>
+</div><!-- /.modal -->
+
+
+
+
+
+<script src="widgetassets/js/jquery-1.10.2.min.js"></script>
+<script src="widgetassets/js/bootstrap.js"></script>
+<script src="widgetassets/js/jquery.placeholder.min.js"></script>
+<script src="widgetassets/js/jquery.simplyscroll.js"></script>
+<script src="widgetassets/js/equalheights.js"></script>
+<script src="widgetassets/js/base.js"></script>
+
+<script>
+   $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+
+</body>
+</html>

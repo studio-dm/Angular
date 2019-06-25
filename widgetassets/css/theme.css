@@ -1,0 +1,1188 @@
+.btn-primary2 {display:none;}
+.compare-plans .txt2 a  .fa-check-square{color:#fff!important}
+.compare-plans .btn-primary {color:#222!important; background:#fff!important}
+
+.compare-plans .btn-primary:hover,
+.compare-plans .btn-primary:focus { background:#ddd!important}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- 
+Verizon  red #cc1900 
+------------------------------------------------------------------------------------------------------------------------------------------- */  
+
+/* ----- header ----- */
+#verizon header {
+	background: rgb(254,254,254);
+	background: -moz-linear-gradient(top,  rgba(254,254,254,1) 40%, rgba(242,242,242,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(40%,rgba(254,254,254,1)), color-stop(100%,rgba(242,242,242,1)));
+	background: -webkit-linear-gradient(top,  rgba(254,254,254,1) 40%,rgba(242,242,242,1) 100%);
+	background: -o-linear-gradient(top,  rgba(254,254,254,1) 40%,rgba(242,242,242,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(254,254,254,1) 40%,rgba(242,242,242,1) 100%);
+	background: linear-gradient(to bottom,  rgba(254,254,254,1) 40%,rgba(242,242,242,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f2f2f2',GradientType=0 ); 
+	position:relative;
+	z-index:3; 	
+}
+#verizon #logo {
+    /* path to CMS */
+	background: url("../../../cms2/theme/verizon/img/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 91px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 135px;
+	margin-top: -15px;
+}
+#verizon #logoLink {
+	display: block;
+}
+#verizon .box-call-top {
+    color: #000;
+}
+/* --- end header --- */
+
+/* ---breadcrumbs------------------------------------------------------------------------------------------------------------------------------------------- */  
+#verizon .breadcrumb1.breadcrumb > .active {background-color: #cc1900 ; border-color: #3bb16a;color: #fff;}
+#verizon .breadcrumb.breadcrumb1 li{background: none repeat scroll 0 0 #e3e3e3;color: #8d8d8d; }
+#verizon .breadcrumb.breadcrumb1 li.active span:before {
+    border-top: 15px solid #cc1900 ;
+    border-bottom: 15px solid #cc1900 ;
+    border-left:15px solid transparent;
+}
+#verizon .breadcrumb.breadcrumb1 li.active span:after {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left:15px solid #cc1900 ;
+}
+#verizon .breadcrumb.breadcrumb1 li.steps {color: #ccc;}
+#verizon .breadcrumb.breadcrumb1 li.steps {
+    background: none repeat scroll 0 0 #59616b;
+    color: #ffffff;
+    text-shadow: none;
+}
+#verizon .cartstatus a strong {
+	color: #cc1900;
+}
+#verizon a:hover {
+	color: #cc1900;
+}
+.col-md-12 .box-1 .verizon.planlogo { background:url(../img/logo-verizon.png) no-repeat center center; }
+/* ---Buttons------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#verizon .btn-primary { background:  none repeat scroll 0 0  #cc1900; color: #fff; }
+#verizon .btn-primary:hover, #verizon .btn-primary:focus { color: #cc1900; background: #e5e5e5;}
+#verizon .btn-primary .fa{font-size:80%}
+#verizon .btn-call { background: url(../img/btn-bg.png) repeat scroll 0 0 #cc1900; color: #fff;}
+#verizon .btn-call:hover, #verizon .btn-call:focus { background: url(../img/btn-bg.png) repeat scroll 0 -100px #F2F2F2; color: #fff; }
+#verizon .compare-plans .txt2 a  .fa-check-square{color:#fff;}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#verizon ul.bullet-2 .fa-check{ color:#cc1900}
+/* ----- Confirmation page ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#verizon .box-5 h3 {color:#cc1900}
+#verizon .box-5 .txt3 span  {color:#cc1900}
+#verizon .box-5 .form-control {  border: 1px solid #cc1900 !important;}
+#verizon .box-5 .fa-info-circle {color:#cc1900}
+#verizon .box-5 .txt3{background:url(../img/logo-verizon.png) no-repeat 15px 15px ; }
+/* ----- Popular Merchandizing ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#verizon .box-1.popular { border-color: #cc1900;}
+#verizon .box-1-inner.popular{ position: relative;}
+#verizon .box-1-inner.popular:before{
+	border-color: transparent #cc1900 transparent transparent;
+	_border-color: #000000 #cc1900 #000000 #000000;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------- 
+Centurylink  green #08974e 
+------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----- header ----- */
+#CTL header {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#CTL #logo {
+    /* path to CMS */
+	background: url("../img/logo-centurylink-header.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 62px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 218px;
+}
+#CTL #logoLink {
+	display: block;
+}
+#CTL .box-call-top {
+    color: #08974e;
+}
+#CTL .btn-call-top {
+	background: none repeat scroll 0 0 #08974e;
+    border: 0 none;
+    color: #ffffff;
+    font-family: 'GothamMedium',Arial,sans-serif;
+    font-size: 12px;
+	margin-top: 3px;
+}
+
+#CTL header.raf .txt1{font-size:16px;}
+#CTL header.raf .txt1 span, #CTL header.raf .mobtxt1 span{color:#08974e}
+#CTL header.raf .txt3{font-size:16px;}
+#CTL header.raf .txt3 span{color:#08974e}
+#CTL header.raf .txt1, #CTL header.raf .txt3 {font-size: 13px; line-height:1.3}
+
+/* --- end header --- */
+
+/* ---breadcrumbs------------------------------------------------------------------------------------------------------------------------------------------- */  
+#CTL .breadcrumb1.breadcrumb > .active {background-color: #08974e ; border-color: #3bb16a;color: #fff;}
+#CTL .breadcrumb.breadcrumb1 li{background: none repeat scroll 0 0 #e3e3e3;color: #8d8d8d; }
+#CTL .breadcrumb.breadcrumb1 li.active span:before {
+    border-top: 15px solid #08974e ;
+    border-bottom: 15px solid #08974e ;
+    border-left:15px solid transparent;
+}
+#CTL .breadcrumb.breadcrumb1 li.active span:after {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left:15px solid #08974e ;
+}
+#CTL .breadcrumb.breadcrumb1 li.steps {color: #ccc;}
+#CTL .breadcrumb.breadcrumb1 li.steps {
+    background: none repeat scroll 0 0 #59616b;
+    color: #ffffff;
+    text-shadow: none;
+}
+.col-md-12 .box-1 .CTL.planlogo { background:url(../img/logo-centurylink.png) no-repeat center center; }
+/* ---Buttons------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#CTL .btn-primary { background:  none repeat scroll 0 0  #08974e; color: #fff; }
+#CTL .btn-primary:hover, #CTL .btn-primary:focus { color: #fff;  background: #88c924;}
+#CTL .btn-primary .fa{font-size:80%}
+#CTL .btn-call { background: url(../img/btn-bg.png) repeat scroll 0 0 #08974e; color: #fff;}
+#CTL .btn-call:hover, #CTL .btn-call:focus { background: url(../img/btn-bg.png) repeat scroll 0 -100px #383d52; color: #fff; }
+#CTL .compare-plans .txt2 a  .fa-check-square{color:#fff;}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#CTL ul.bullet-2 .fa-check{ color:#08974e}
+/* ----- Confirmation page ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#CTL .box-5 h3 {color:#08974e}
+#CTL .box-5 .txt3 span  {color:#08974e}
+#CTL .box-5 .form-control {  border: 1px solid #08974e !important;}
+#CTL .box-5 .fa-info-circle {color:#08974e}
+#CTL .box-5 .txt3{background:url(../img/logo-centurylink.png) no-repeat 15px 15px ; }
+/* ----- Popular Merchandizing ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#CTL .box-1.popular{ border-color: #08974e;}
+#CTL .box-1-inner.popular{ position: relative;}
+#CTL .box-1-inner.popular:before{
+	border-color: transparent #08974e transparent transparent;
+	_border-color: #000000 #08974e #000000 #000000;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------- 
+ ATT        orange #ffa500  blue #328fc8   pink  #bc006c
+------------------------------------------------------------------------------------------------------------------------------------------- */  
+/* ----- header ----- */
+#ATTSTI header {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#ATTSTI #logo {
+    /* path to CMS */
+	background: url("../img/logo-att-header.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 62px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 218px;
+}
+#ATTSTI #logoLink {
+	display: block;
+}
+#ATTSTI .box-call-top {
+    color: #328fc8;
+}
+#ATTSTI .btn-call-top {
+	background: none repeat scroll 0 0 #ffa500;
+    border: 0 none;
+    color: #fff;
+    font-family: 'GothamMedium',Arial,sans-serif;
+    font-size: 12px;
+	margin-top: 12px;
+}
+#ATTSTI .btn-call-top.btn-primary{text-transform:none;}
+/* --- end header --- */
+
+/* ---breadcrumbs------------------------------------------------------------------------------------------------------------------------------------------- */  
+#ATTSTI .breadcrumb1.breadcrumb > .active {background-color: #328fc8 ; border-color: #3bb16a;color: #fff;}
+#ATTSTI .breadcrumb.breadcrumb1 li{background: none repeat scroll 0 0 #e3e3e3;color: #8d8d8d; }
+#ATTSTI .breadcrumb.breadcrumb1 li.active span:before {
+    border-top: 15px solid #328fc8 ;
+    border-bottom: 15px solid #328fc8 ;
+    border-left:15px solid transparent;
+}
+#ATTSTI .breadcrumb.breadcrumb1 li.active span:after {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-left:15px solid #328fc8 ;
+}
+#ATTSTI .breadcrumb.breadcrumb1 li.steps {color: #ccc;}
+#ATTSTI .breadcrumb.breadcrumb1 li.steps {
+    background: none repeat scroll 0 0 #59616b;
+    color: #ffffff;
+    text-shadow: none;
+}
+.col-md-12 .box-1 .ATTSTI.planlogo { background:url(../img/logo-att.png) no-repeat center center; }
+/* ---Buttons------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#att .btn-primary { background: none repeat scroll 0 0 #328fc8; color: #fff; }
+#ATTSTI .btn-primary:hover, #ATTSTI .btn-primary:focus { color: #fff;  background: #328fc8;}
+#ATTSTI .btn-primary .fa{font-size:80%}
+#ATTSTI .btn-call { background: none repeat scroll 0 0  #328fc8; color: #fff;}
+#ATTSTI .btn-call:hover, #ATTSTI .btn-call:focus { background: url(../img/btn-bg.png) repeat scroll 0 -100px #383d52; color: #fff; }
+#ATTSTI .compare-plans .txt2 a  .fa-check-square{color:#ffa500;}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#att ul.bullet-2 .fa-check{ color:#328fc8}
+/* ----- Confirmation page ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#ATTSTI .box-5 .txt3 span  {color:#ffa500}
+#ATTSTI .box-5 .form-control { border: 2px solid #ffa500 !important;}
+#ATTSTI .box-5 .fa-info-circle {color:#ffa500}
+#ATTSTI .box-5 .txt3{background:url(../img/logo-att.png) no-repeat 15px 15px ; }
+/* ----- Popular Merchandizing ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#ATTSTI .box-1.popular { border-color: #ffa500;}
+#ATTSTI .box-1-inner.popular{ position: relative;}
+#ATTSTI .box-1-inner.popular:before{
+	border-color: transparent #ffa500 transparent transparent;
+	_border-color: #000000 #ffa500 #000000 #000000;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- 
+ TWC       blue #00549f   purple  #702d86
+------------------------------------------------------------------------------------------------------------------------------------------- */  
+/* TWC FONTS */
+#TWC .btn-call-top, #TWC .box-call-top p.txt1, #TWC .box-call-top p.mobtxt1, #TWC .box-5 h3, #TWC .box-4 h3, #TWC .box-4 h4, #TWC .box-5 .txt1-all, #TWC .box-5 .txt2, #TWC .box-5 .txt3, #TWC .call2, #TWC .box-2 h4, #TWC .table1 th {
+    font-family: "StagSansRound-Medium",Arial,sans-serif;
+}
+/* End TWC Fonts */
+/* ----- header ----- */
+#TWC header {
+    background: none repeat scroll 0 0 #2C2E30;
+}
+#TWC #logo {
+    /* path to CMS */
+	background: url(../img/logo-twc-header.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 51px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 278px;
+}
+#TWC #logoLink {
+	display: block;
+}
+#TWC footer {
+    background: none repeat scroll 0 0 #f2f4f6;
+}
+#TWC .btn-call-top {
+    background: none repeat scroll 0 0 #00A9E0;
+    border: 0 none;
+    color: #fff;
+    text-shadow: -1px -1px 1px #00689c;
+}
+#TWC .btn-call-top.btn-primary{text-transform:none;}
+#TWC .box-call-top {
+    color: #ffffff;
+     font-size: 0.9em;
+    line-height: 1.4em;
+ }
+#TWC .box-call-top p.txt-order {
+    font-family: "StagSansRound-Book",Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: right;
+}
+#TWC .box-call-top p.txt-order span {
+    font-size: 24px;
+    line-height: 1.2;
+}
+#TWC .box-call-top p.txt-program {
+    color: #7d8392;
+    font-size: 11px;
+    line-height: 1.4;
+}
+#TWC .box-call-top p.txt-code {
+    color: #bfc9d0;
+    font-weight: bold;
+    margin: 0 0 6px;
+}
+/* --- end header --- */
+/* ---breadcrumbs------------------------------------------------------------------------------------------------------------------------------------------- */  
+body#TWC{font-family:"StagSansRound-book",Arial,Helvetica,sans-serif; background-color: #f2f4f6; }
+#TWC section.main-content { background: none repeat scroll 0 0 #f2f4f6; }
+#TWC .breadcrumb1.breadcrumb > .active {background-color: #00A9E0; border-color: #00A9E0;color: #fff;}
+#TWC .breadcrumb.breadcrumb1 li.active span:before {
+    border-top: 15px solid #00A9E0   ;
+    border-bottom: 15px solid #00A9E0   ;
+    border-left:15px solid transparent;
+}
+#TWC .breadcrumb.breadcrumb1 li.active span:after {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-left:15px solid #00A9E0   ;
+}
+#TWC .breadcrumb.breadcrumb1 li.steps {color: #ccc;}
+#TWC .breadcrumb.breadcrumb1 li.steps {
+    background: none repeat scroll 0 0 #00A9E0;
+    color: #ffffff;
+    text-shadow: none;
+}
+.col-md-12 .box-1 .TWC.planlogo { background:url(../img/logo-twc.png) no-repeat center center; }
+/* ---Buttons------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#TWC .btn-primary { background: none repeat scroll 0 0 #00A9E0; color: #fff; }
+#TWC .btn-primary:hover, #TWC .btn-primary:focus { color: #fff; background: #383d52;}
+#TWC .btn-primary .fa{font-size:80%}
+#TWC .btn-call { background: #00A9E0; color: #fff;}
+#TWC .btn-call:hover, #TWC .btn-call:focus { background: none #383d52 ; color: #fff; }
+#TWC .compare-plans .txt2 a  .fa-check-square{color:#fff;} 
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#TWC ul.bullet-2 .fa-check{ color:#000  }
+/* ----- Confirmation page ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#TWC .box-5 h3 { color:#000; }
+#TWC .box-5 .txt3 span  { color:#00549f; }
+#TWC .box-5 .form-control { border-color: #00a9e0 !important;}
+#TWC .box-5 .fa-info-circle {color:#00549f; }
+#TWC .box-5 .txt3{background:url(../img/logo-twc.png) no-repeat 15px 15px; }
+/* ----- Popular Merchandizing ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#TWC .box-1-inner.popular{ /*border-color:#424E57;*/ position: relative;}
+#TWC .box-1-inner.popular:before{
+	border-color: transparent #00a9e0 transparent transparent;
+	_border-color: #000000 #00a9e0 #000000 #000000;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+#TWC .box-1.popular { border-color: #00a9e0;}
+
+#TWC .box-2  h4, #twc .table1 th{ font-family:"StagSansRound-Medium",Arial,Helvetica,sans-serif; }
+}
+
+@media (max-width: 767px) {
+#TWC #offer_filter li.active{ background: none repeat scroll 0 0 #702d86; color: #ffffff; }
+#TWC #offer_filter li:hover { background: none repeat scroll 0 0 #00549f ; }
+}
+/* ----- tooltip ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#TWC .tooltip.top{box-shadow: 0  0  3px rgba(0,0,0, .15); -webkit-box-shadow: 0  0  3px rgba(0,0,0, .15); padding:0}
+#TWC .tooltip.top .tooltip-arrow{
+    bottom:-5px;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #ccc /*#00549f*/;
+}
+
+#TWC .tooltip-inner{background: #fff; color:#555  ; font-size:13px; line-height:1.2; padding: 10px; text-align:left; border:1px solid #ddd; box-shadow: 0  0  8px  rgba(0,0,0,.1); -webkit-box-shadow: 0  0  5px  rgba(0,0,0,.1)}
+#TWC .tooltip-inner { max-width: 280px;}
+
+/* ----- header ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#TWC header.raf .txt1{font-size:16px;}
+#TWC header.raf .txt1 span, #TWC header.raf .mobtxt1 span{color:#1fc0fb}
+#TWC header.raf .txt3{font-size:16px;}
+#TWC header.raf .txt3 span{color:#1fc0fb}
+#TWC header.raf .txt1, #TWC header.raf .txt3 {font-size: 13px; line-height:1.3}
+
+
+ /* ------------------------------------------------------------------------------------------------------------------------------------------- 
+ Charter       blue #07638d   green  #7cca28
+------------------------------------------------------------------------------------------------------------------------------------------- */  
+
+/* ----- header ----- */
+#charter header {
+    background: none repeat scroll 0 0 #FFF;
+}
+#charter #logo {
+    /* path to CMS */
+	background: url("../../../cms2/theme/charter/img/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 58px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 260px;
+}
+#charter #logoLink {
+	display: block;
+}
+#charter .box-call-top {
+    color: #666666;
+}
+/* --- end header --- */
+
+/* ---breadcrumbs------------------------------------------------------------------------------------------------------------------------------------------- */  
+
+#charter .breadcrumb1.breadcrumb > .active {background-color: #7cca28   ; border-color: #7cca28  ;color: #fff;}
+#charter .breadcrumb.breadcrumb1 li.active span:before {
+    border-top: 15px solid #7cca28   ;
+    border-bottom: 15px solid #7cca28   ;
+    border-left:15px solid transparent;
+}
+ 
+#charter .breadcrumb.breadcrumb1 li.active span:after {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-left:15px solid #7cca28   ;
+}
+#charter .breadcrumb.breadcrumb1 li.steps {color: #ccc;}
+
+#charter .breadcrumb.breadcrumb1 li.steps {
+    background: none repeat scroll 0 0 #7cca28;
+    color: #ffffff;
+    text-shadow: none;
+}
+/*#TWC .breadcrumb.breadcrumb1 li.steps span:after {
+    border-bottom: 15px solid rgba(0, 0, 0, 0);
+    border-left: 15px solid #59616b;
+    border-top: 15px solid rgba(0, 0, 0, 0);
+
+}*/
+
+.col-md-12 .box-1 .charter.planlogo { background:url(../img/logo-charter.png) no-repeat center center; }
+  	
+/* ---Buttons------------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+
+#charter .btn-primary { background: none repeat scroll 0 0 #07638d  ; color: #fff; }
+#charter .btn-primary:hover, #charter .btn-primary:focus { color: #fff;  background: #328fc8;}
+#charter .btn-primary .fa{font-size:80%}
+
+#charter .btn-call { background:  url(../img/btn-bg.png) repeat scroll 0 0  #7cca28; color: #fff;}
+#charter .btn-call:hover, #charter .btn-call:focus { background: url(../img/btn-bg.png) repeat scroll 0 -100px #383d52; color: #fff; }
+ 
+#charter .compare-plans .txt2 a .fa-check-square{color:#fff;} 
+ 
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+#charter ul.bullet-2 .fa-check{ color:#7cca28  }
+
+/* ----- Confirmation page ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+#charter .box-5 h3 {color:#07638d  }
+#charter .box-5 .txt3 { border: 1px solid #07638d; min-width: 210px;}
+#charter .box-5 .txt3 span  {color:#07638d  }
+#charter .box-5 .form-control {  border: 1px solid #07638d   !important;}
+#charter .box-5 .fa-info-circle {color:#07638d  }
+#charter .box-4 h4 {border-bottom: 1px solid #07638d  ; color:#07638d  }
+#charter .box-5 .txt3{background:url(../img/logo-charter.png) no-repeat 15px 15px ; }
+
+/* ----- Popular Merchandizing ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+#charter .box-1-inner.popular{ /*border-color:#7cca28;*/ position: relative;}
+ 
+#charter .box-1-inner.popular:before{
+border-color: transparent #7cca28 transparent transparent;
+_border-color: #000000 #7cca28 #000000 #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+@media (max-width: 767px) {
+#charter #offer_filter li.active{ background: none repeat scroll 0 0 #7cca28; color: #ffffff; }
+#charter #offer_filter li:hover { background: none repeat scroll 0 0 #07638d ; }
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- 
+ BundleSwitch
+------------------------------------------------------------------------------------------------------------------------------------------- */  
+
+/* ----- header ----- */
+#bundleswitch header {
+    background: linear-gradient(to bottom, rgba(254, 254, 254, 1) 40%, rgba(242, 242, 242, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#bundleswitch #logo {
+    /* path to CMS */
+	background: url("../../../cms_express/theme/bundleswitch/img/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 51px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 278px;
+}
+#bundleswitch #logoLink {
+	display: block;
+}
+#bundleswitch .box-call-top {
+    color: #666;
+}
+/* --- end header --- */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- 
+ Comcast dark-gray: #373737
+------------------------------------------------------------------------------------------------------------------------------------------- */  
+
+/* ----- header ----- */
+#COMCAST header {
+    background: #373737;
+}
+#COMCAST #logo {
+    /* path to CMS */
+	background: url("../../../cms_express/theme/comcast/img/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 51px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 278px;
+}
+#COMCAST #logoLink {
+	display: block;
+}
+#COMCAST .box-call-top {
+	color: #FFF;
+}
+#COMCAST .btn-call-top {
+	background: none repeat scroll 0 0 #ffd300;
+    border: 0 none;
+    color: #000000;
+    font-family: 'GothamMedium',Arial,sans-serif;
+    font-size: 12px;
+	margin-top: 3px;
+}
+#COMCAST .btn-call-top.btn-primary{text-transform:none;}
+
+/* --- end header --- */
+#COMCAST .stepwrap {display:none;}
+
+
+ /* ------------------------------------------------------------------------------------------------------------------------------------------- 
+ DUKE     
+------------------------------------------------------------------------------------------------------------------------------------------- */  
+/* ----- header ----- */
+#duke header {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#duke #logo {
+ 	background: url("../img/duke/duke-logo-DEP.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 68px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 218px;
+}
+
+#duke.dep #logo { 	background: url("../img/duke/duke-logo-DEP.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#duke.dec #logo { background: url("../img/duke/duke-logo-DEC.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#duke.def #logo { background: url("../img/duke/duke-logo-DEF.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#duke.demw #logo { background: url("../img/duke/duke-logo-DEMW.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#duke.home #logo { background: url("../img/duke/duke-logo-DEF.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+
+#duke #logoLink {
+	display: block;
+}
+#duke .box-call-top {
+    color: #328fc8;
+}
+
+#duke .box-call-top p.txt1 {
+	color:#363636;
+    font-family: "GothamMedium",Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    line-height: 24px;}
+
+#duke .strPhone{color:#005a84; font-size: 36px; line-height: 40px;}
+#duke .box-call-top .txt2{color:#59616b; font-size:11px;}
+
+/* ---breadcrumbs  address------------------------------------------------------------------------------------------------------------------------------------------- */  
+
+#duke .stepwrap {display:none;}
+#duke .count { } 
+#duke .servicearea {background:#005a84}
+
+.col-md-12 .box-1 .ATTSTI.planlogo { background:url(../img/logo-att.png) no-repeat center center; }
+#duke .planwrap { background: none repeat scroll 0 0 #f2f2f2;  }
+ 
+#duke .servicearea { margin: 0 0 10px;}
+#duke .servicearea p {    color: #ffffff; margin: 0;  padding: 10px 0;}
+#duke .address {color: #d3f3ff;}
+#duke .count a {color: #d3f3ff;}
+
+
+
+	
+/* ---Buttons------------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+
+#duke .btn-primary { cursor: default; background: none repeat scroll 0 0 #54b948; color: #fff; border: 2px solid #ffffff; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);}
+#duke .btn-primary:hover, #duke .btn-primary:focus { color: #fff;  background: #328fc8;}
+#duke .btn-primary .fa{font-size:80%}
+
+#duke .btn-call { background:  url(../img/btn-bg.png) repeat scroll 0 0  #328fc8; color: #fff;}
+#duke .btn-call:hover, #duke .btn-call:focus { background: url(../img/btn-bg.png) repeat scroll 0 -100px #383d52; color: #fff; }
+ 
+#duke .compare-plans .txt2 a  .fa-check-square{color:#fff; }
+
+#duke .btn-primary.toggleButton{border:none;}
+
+#duke  .btn.btn-med.btn-primary > span {
+    font-size: 135%;
+    padding: 15px;
+}
+
+/* ---Plans------------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+
+#duke .box-1{background: #ffffff; 
+background: -moz-linear-gradient(top,  #ffffff 50%, #f5fbfd 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ffffff), color-stop(100%,#f5fbfd));
+background: -webkit-linear-gradient(top,  #ffffff 50%,#f5fbfd 100%);
+background: -o-linear-gradient(top,  #ffffff 50%,#f5fbfd 100%);
+background: -ms-linear-gradient(top,  #ffffff 50%,#f5fbfd 100%);
+background: linear-gradient(to bottom,  #ffffff 50%,#f5fbfd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5fbfd',GradientType=0 );}
+
+
+#duke .box-1 h6{color: #046694;
+    font-family: "gothambold",Arial,sans-serif;}
+#duke ul.bullet-2 .fa-check { color: #50b948;}
+#duke .box-1 h4 {
+    border-bottom: 1px solid #275a88;
+    color: #275a88;
+	font-size:14px;
+	margin-bottom:18px;}
+
+#duke .box-1 ul.bullet-2.promos {
+    color: #4c4c4c;
+    font-family:  arial,sans-serif;}
+	
+#duke .box-1 ul.bullet-2.features { font-family: arial,sans-serif;}	
+	
+	
+#duke .plus-sign{display:none;}	
+#duke .box-1 .icons1 img { height: 55px; margin: 0 -12px;}
+	
+#duke #serviceArea {
+	display: none;
+}
+
+/* -------------- DTV -------------- */
+.col-md-12 .box-1 .dtv.planlogo, .dtv .planlogo  { background:url(../img/logo-dtv.png) no-repeat center center; }
+/* -------------- EXEDE -------------- */
+.col-md-12 .box-1 .exede.planlogo, .exede .planlogo { background:url(../img/logo-exede.png) no-repeat center center; }
+/* -------------- BRIGHTHOUSE -------------- */
+.col-md-12 .box-1 .brighthouse.planlogo, .brighthouse .planlogo { background:url(../img/logo-brighthouse.png) no-repeat center center; }
+/* -------------- CHARTER -------------- */
+.col-md-12 .box-1 .charter.planlogo, .charter .planlogo { background:url(../img/logo-charter.png) no-repeat center center; }
+/* -------------- VERIZON -------------- */
+.col-md-12 .box-1 .verizon.planlogo, .verizon .planlogo { background:url(../img/logo-verizon.png) no-repeat center center; }
+/* -------------- CENTURYLINK -------------- */
+.col-md-12 .box-1 .centurylink.planlogo, .CTL .planlogo { background:url(../img/logo-centurylink.png) no-repeat center center; }
+/* -------------- ATT -------------- */
+.col-md-12 .box-1 .att.planlogo, .ATTSTI .planlogo  { background:url(../img/logo-att.png) no-repeat center center; }
+/* -------------- TWC -------------- */
+.col-md-12 .box-1 .twc.planlogo, .TWC .planlogo { background:url(../img/logo-twc.png) no-repeat center center; } 
+/* -------------- Comcast -------------- */
+.col-md-12 .box-1 .comcast.planlogo, .COMCAST .planlogo { background: url(../img/logo-xfinity.png) no-repeat scroll center; }
+/* -------------- Cox -------------- */
+.col-md-12 .box-1 .cox.planlogo, .cox .planlogo { background: url(../img/logo-cox.png) no-repeat scroll center; }
+/* -------------- vivint -------------- */
+.col-md-12 .box-1 .vivint.planlogo { background: url(../img/logo-vivint.png) no-repeat scroll center; }
+
+/* -------------- VERIZON -------------- */
+.col-md-12 .box-1 .verizon.planlogo { background:url(../img/logo-verizon.png) no-repeat center center; }
+
+/* -------------- CENTURYLINK -------------- */
+.col-md-12 .box-1 .centurylink.planlogo { background:url(../img/logo-centurylink.png) no-repeat center center; }
+
+/* -------------- ATT -------------- */
+.col-md-12 .box-1 .ATTSTI.planlogo { background:url(../img/logo-att.png) no-repeat center center; }
+
+/* -------------- TWC -------------- */
+.col-md-12 .box-1 .TWC.planlogo { background:url(../img/logo-twc.png) no-repeat center center; } 
+
+/* -------------- Comcast -------------- */
+.col-md-12 .box-1 .COMCAST.planlogo {
+    background: url(../img/logo-xfinity.png) no-repeat scroll center }
+	
+/* -------------- Cox -------------- */
+.col-md-12 .box-1 .cox.planlogo { background: url(../img/logo-cox.png) no-repeat scroll center 	}
+
+
+/* Theme responsive */
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {		
+}
+ 
+@media (max-width: 480px) {
+	#ATTSTI #logo { background:url(../img/logo-att-s.png) center 0 no-repeat; width:156px; height:50px; display: block;  margin: 0 auto; float:none;}
+	#COMCAST #logo { background:url(../img/logo-xfinity-s.png) center 0 no-repeat; width:158px; height:34px; display: block;  margin: 0 auto; float:none;}
+	#CTL #logo { background:url(../img/logo-centurylink-header.png) center 0 no-repeat; display: block;  margin: 0 auto; float:none;}
+	#TWC #logo { background:url(../img/logo-twc-m.png) center 0 no-repeat; width:200px; height:37px; display: block;  margin: 0 auto; float:none;}
+	#dukeRNRO section.main-content { padding-top: 0px;}
+}
+/* Landscape phones and down */
+@media (max-width: 320px) {
+	.btn-xlg { font-size: 16px; }
+}
+
+/* add to BASE */
+@media (min-width: 481px) and (max-width: 979px) {		
+	.box-call-top { float: none; text-align: center;}
+	#ATTSTI #logo { background:url("../../../cms_express/theme/att/img/logo.png") center 0 no-repeat; width:186px; height:60px; display: block;  margin: 0 auto; float:none;}
+	#COMCAST #logo { background:url("../../../cms_express/theme/comcast/img/logo.png") center 0 no-repeat; width:207px; height:44px; display: block;  margin: 0 auto; float:none;}
+	#CTL #logo { background:url("../img/logo-centurylink-header.png") center 0 no-repeat; width:218px; height:62px; display: block;  margin: 0 auto; float:none;}
+	#TWC #logo { background:url(../img/logo-twc-header.png) center 0 no-repeat; width:278px; height:51px; display: block;  margin: 0 auto; float:none;}
+}
+
+ /* ------------------------------------------------------------------------------------------------------------------------------------------- 
+ Realtor        gray: #a1abaa   Green:  #115f67
+------------------------------------------------------------------------------------------------------------------------------------------- */  
+/* ----- header ----- */
+#realtor header {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#realtor #logo {
+    /* path to CMS */
+	background: url("../img/logo-realtor-header.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 62px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 218px;
+}
+#realtor #logoLink {
+	display: block;
+}
+#realtor .box-call-top p.txt1 {color: #a1abaa; font-size:16px; line-height:1.2}
+
+#realtor .box-call-top p.txt1 .strPhone{color: #115f67; font-size:26px; font-weight:bold;}
+
+#realtor .breadcrumb1.breadcrumb .cartstatus a {  color: #5d5d5d;}
+#realtor .breadcrumb1.breadcrumb .cartstatus strong { color: #115f67;}
+
+/* --- end header --- */
+
+/* ---breadcrumbs------------------------------------------------------------------------------------------------------------------------------------------- */  
+
+#realtor .breadcrumb1.breadcrumb > .active {background-color: #115f67 ; border-color: #3bb16a;color: #fff;}
+#realtor .breadcrumb.breadcrumb1 li{background: none repeat scroll 0 0 #e3e3e3;color: #8d8d8d; }
+#realtor .breadcrumb.breadcrumb1 li.active span:before {
+    border-top: 15px solid #115f67 ;
+    border-bottom: 15px solid #115f67 ;
+    border-left:15px solid transparent;
+}
+ 
+#realtor .breadcrumb.breadcrumb1 li.active span:after {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-left:15px solid #115f67 ;
+}
+#realtor .breadcrumb.breadcrumb1 li.steps {color: #ccc;}
+
+#realtor .breadcrumb.breadcrumb1 li.steps {
+    background: none repeat scroll 0 0 #59616b;
+    color: #ffffff;
+    text-shadow: none;
+}
+/*#realtor .breadcrumb.breadcrumb1 li.steps span:after {
+    border-bottom: 15px solid rgba(0, 0, 0, 0);
+    border-left: 15px solid #59616b;
+    border-top: 15px solid rgba(0, 0, 0, 0);
+
+}*/
+	
+/* ---Buttons------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#realtor .btn-primary { background: none repeat scroll 0 0 #115f67; color: #fff; }
+#realtor .btn-primary:hover, #realtor .btn-primary:focus { color: #fff;  background: #267786 ;}
+
+#realtor .btn-primary2 { background: #eeeeee; color: #777; border-color: #e3e3e3; font-size:12px}
+#realtor .btn-primary2:hover, #realtor .btn-primary2:focus { color: #333;  background: #ebebeb ;}
+
+#realtor .cart .btn-primary { margin: 5px 0;  padding: 10px 0;}
+#realtor .cart .btn-primary:hover { margin: 0; padding: 15px 0; }
+
+#realtor .btn-primary, #realtor .btn-primary2 {width:100%}
+#realtor .btn-primary, #realtor .btn-default, #realtor .btn-primary2 {margin: 5px 0;  padding: 6px 12px; }
+#realtor .btn-primary:hover, #realtor .btn-primary:focus, #realtor .btn-primary2:hover, #realtor .btn-primary2:focus { margin: 0;  padding: 11px 12px;}
+
+#realtor .btn-primary .fa{font-size:80%}
+
+#realtor .btn-call { background:  url(../img/btn-bg.png) repeat scroll 0 0  #115f67; color: #fff;}
+#realtor .btn-call:hover, #realtor .btn-call:focus { background: url(../img/btn-bg.png) repeat scroll 0 -100px #267786; color: #fff; }
+ 
+#realtor .compare-plans .txt2 a .fa-check-square{color:#fff;}
+
+#realtor .compare-plans .btn-primary { color: #fff;  background: #267786 ;}
+
+#realtor .btn.btn-primary.btn-xs.toggleButton {width:auto;}
+#realtor .btn.btn-primary.btn-xs, #realtor .btn.btn-primary.btn-xs:hover, #realtor .btn.btn-primary.btn-xs:focus {margin: 0; padding: 4px 12px;}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+#realtor ul.bullet-2 .fa-check{ color:#a1abaa}
+
+/* ----- Confirmation page ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+ /*#realtor .box-5 .txt3 { border: 1px solid #ffa500;}*/
+#realtor .box-5 .txt3 span  {color:#ffa500}
+#realtor .box-5 .form-control {  border: 2px solid #ffa500 !important;}
+#realtor .box-5 .fa-info-circle {color:#ffa500}
+/*#realtor .box-4 h4 {border-bottom: 1px solid #ffa500; color:#ffa500}*/
+#realtor .box-5 .txt3{background:url(../img/logo-att.png) no-repeat 15px 15px ; }
+#realtor .messagebox p span {color:#115f67}
+
+/* ----- Popular Merchandizing ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+#realtor .box-1-inner.popular{ /*border-color:#702d86;*/ position: relative;}
+ 
+#realtor .box-1-inner.popular:before{
+border-color: transparent #115f67 transparent transparent;
+_border-color: #000000 #115f67 #000000 #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+#realtor .box-1.popular { border-color: #115f67;}
+
+ /* ------------------------------------------------------------------------------------------------------------------------------------------- 
+ DUKE RNRO    #005a84
+------------------------------------------------------------------------------------------------------------------------------------------- */  
+#dukeRNRO .btn-call-top, #dukeRNRO .box-call-top p.txt1, #dukeRNRO .box-call-top p.mobtxt1,  #dukeRNRO .box-4 h4, #dukeRNRO .box-5 .txt1-all, #dukeRNRO .box-5 .txt2, #dukeRNRO .call2, #dukeRNRO .table1 th, #dukeRNRO .breadcrumb1.breadcrumb > li, #dukeRNRO .box-1 h3  {
+    font-family: "NewsGothBTBold",Arial,sans-serif;
+}
+
+#dukeRNRO .box-call-top p.mobtxt1, #dukeRNRO h2.style1, #dukeRNRO .box-5 h3, #dukeRNRO .box-5 .txt3   {
+    font-family: "NewsGothBTRoman",Arial,sans-serif;}
+
+#dukeRNRO .box-2 h4, #dukeRNRO .box-3 h3, #dukeRNRO .box-4 h3{font-size:22px; font-family: "NewsGothBTRoman",Arial,sans-serif;}
+
+/* ----- header ----- */
+#dukeRNRO header {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#dukeRNRO #logo {
+ 	background: url("../img/duke/duke-logo-DEP.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: none;
+    height: 68px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 218px;
+}
+
+#dukeRNRO.dep #logo { 	background: url("../img/duke/duke-logo-DEP.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#dukeRNRO.dec #logo { background: url("../img/duke/duke-logo-DEC.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#dukeRNRO.def #logo { background: url("../img/duke/duke-logo-DEF.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#dukeRNRO.demw #logo { background: url("../img/duke/duke-logo-DEMW.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#dukeRNRO.home #logo { background: url("../img/duke/duke-logo-DEF.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+
+#dukeRNRO #logoLink {
+	display: inline-block;
+}
+#dukeRNRO .box-call-top {
+    color: #328fc8;
+}
+
+#dukeRNRO .box-call-top p.txt1 {
+	color:#363636;
+    font-size: 20px;
+    line-height: 24px;}
+
+#dukeRNRO .border-top{border-top:4px double #eee;}
+#dukeRNRO .box-call-top .txt2{color:#59616b; font-size:11px;}
+
+#dukeRNRO section.main-content{padding-top:0;}
+#dukeRNRO .main-content.content-compare-plans{padding-top:0;}
+
+/* ---breadcrumbs  address------------------------------------------------------------------------------------------------------------------------------------------- */  
+
+#dukeRNRO .stepwrap { }
+#dukeRNRO .count { } 
+#dukeRNRO .servicearea {background:#005a84}
+
+.col-md-12 .box-1 .att.planlogo { background:url(../img/logo-att.png) no-repeat center center; }
+#dukeRNRO .planwrap { background: transparent; box-shadow: none; -webkit-box-shadow: none; }
+ 
+#dukeRNRO .servicearea { margin: 0 0 10px; display:none}
+#dukeRNRO .servicearea p {    color: #ffffff; margin: 0;  padding: 10px 0;}
+#dukeRNRO .address {color: #d3f3ff;}
+#dukeRNRO .count a {color: #d3f3ff;}
+
+/* ---breadcrumbs------------------------------------------------------------------------------------------------------------------------------------------- */  
+#dukeRNRO .breadcrumb1.breadcrumb > .active {background-color: #005a84 ; border-color: #3bb16a;color: #fff;}
+#dukeRNRO .breadcrumb.breadcrumb1 li{background: none repeat scroll 0 0 #e3e3e3;color: #8d8d8d; }
+#dukeRNRO .breadcrumb.breadcrumb1 li.active span:before {
+    border-top: 15px solid #005a84 ;
+    border-bottom: 15px solid #005a84 ;
+    border-left:15px solid transparent;
+}
+#dukeRNRO .breadcrumb.breadcrumb1 li.active span:after {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-left:15px solid #005a84 ;
+}
+#dukeRNRO .breadcrumb.breadcrumb1 li.steps {color: #ccc;}
+#dukeRNRO .breadcrumb.breadcrumb1 li.steps {
+    background: none repeat scroll 0 0 #59616b;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+	
+/* ---Buttons------------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+
+#dukeRNRO .btn-primary { cursor: default; background: none repeat scroll 0 0 #54b948; color: #fff; border: 2px solid #ffffff; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);}
+#dukeRNRO .btn-primary:hover, #dukeRNRO .btn-primary:focus { color: #fff;  background: #328fc8;}
+#dukeRNRO .btn-primary .fa{font-size:80%}
+
+#dukeRNRO .btn-call { background:  url(../img/btn-bg.png) repeat scroll 0 0  #328fc8; color: #fff;}
+#dukeRNRO .btn-call:hover, #dukeRNRO .btn-call:focus { background: url(../img/btn-bg.png) repeat scroll 0 -100px #383d52; color: #fff; }
+ 
+#dukeRNRO .compare-plans .txt2 a  .fa-check-square{color:#fff; }
+
+#dukeRNRO .btn-primary.toggleButton{border:none;}
+
+#dukeRNRO  .btn.btn-med.btn-primary > span {
+    font-size: 135%;
+    padding: 15px;
+}
+
+/* --- tabs nav------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#dukeRNRO #offer_filter{display:none}
+
+/* --- cart------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#dukeRNRO .txt-free1{color: #50b948; font-size:85%}
+#dukeRNRO .disclaimer{margin-top:40px; color: #a0a0a0;}
+#dukeRNRO .additionaltext {font-size:11px;line-height:1.2; padding:15px 0 0; color: #50b948;}
+
+/* ----- Confirmation page ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+#dukeRNRO .box-5 .txt3 span  {color:#005a84}
+#dukeRNRO .box-5 .form-control { border: 2px solid #005a84 !important;}
+#dukeRNRO .box-5 .fa-info-circle {color:#005a84}
+#dukeRNRO .box-5 .txt3{background:url(../img/duke/duke-logo-DEf-sm.png) no-repeat -15px 0 ; border: 1px solid #005a84; }
+#dukeRNRO tfoot{background:#f8f8f8; border: 1px solid #eeeeee;}
+/* ---Plans------------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+#dukeRNRO .navfilter {  display: none}
+#dukeRNRO .box-1{background: #ffffff; 
+background: -moz-linear-gradient(top,  #ffffff 50%, #f5fbfd 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ffffff), color-stop(100%,#f5fbfd));
+background: -webkit-linear-gradient(top,  #ffffff 50%,#f5fbfd 100%);
+background: -o-linear-gradient(top,  #ffffff 50%,#f5fbfd 100%);
+background: -ms-linear-gradient(top,  #ffffff 50%,#f5fbfd 100%);
+background: linear-gradient(to bottom,  #ffffff 50%,#f5fbfd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5fbfd',GradientType=0 );}
+
+#dukeRNRO .surge.box-1 { background: url(../img/duke/bg-surge.png) no-repeat scroll -180px 0 #fff;}
+#dukeRNRO .waterheater.box-1 { background: url(../img/duke/bg-waterheater.png) no-repeat scroll -55px 0 #fff;}
+#dukeRNRO .homewire.box-1 { background: url(../img/duke/bg-homewire.png) no-repeat scroll -85px 0 #fff;}
+#dukeRNRO .homewiredeluxe.box-1 { background: url(../img/duke/bg-homewiredeluxe.png) no-repeat scroll -50px 0  #fff;}
+
+#dukeRNRO ul.bullet-2 li {  padding: 0 0 8px 24px; text-indent: -8px;}
+
+#dukeRNRO .box-1 h6{color: #046694;min-height: 115px; font-family: "gothambold",Arial,sans-serif;}
+#dukeRNRO ul.bullet-2 .fa-check { color: #50b948;}
+#dukeRNRO ul.bullet-2 li { color: #005a84;}
+#dukeRNRO .box-1 h4 {
+    border-bottom: 1px solid #275a88;
+    color: #275a88;
+	font-size:14px;
+	margin-bottom:18px;}
+
+#dukeRNRO .box-1 ul.bullet-2.promos {
+    color: #4c4c4c;
+    font-family:  arial,sans-serif;}
+	
+#dukeRNRO .box-1 ul.bullet-2.features { font-family: arial,sans-serif;}	
+	
+	
+#dukeRNRO .plus-sign{display:none;}	
+#dukeRNRO .box-1 .icons1 img { /*height: 55px;*/ height: 85px; margin: 0 -12px;}
+	
+#dukeRNRO #serviceArea {
+	display: none;
+}
+
+#dukeRNRO .box-1 h3 { font-size: 18px; padding: 15px 0 0; text-shadow:3px 3px 2px #ffffff, -3px -3px 2px #ffffff; min-height: 50px;}
+
+/* ---MODAL------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#dukeRNRO .modal-content .modal-content{overflow:hidden;}
+#surgemodal, #waterheatermodal,#homewiremodal,#homewiredeluxemodal { background:  rgba(43, 190, 216, .8);}
+
+#surgemodal .modal-footer { background: url(../img/duke/bg-surge.png) no-repeat scroll -50px -20px  #fff;}
+#waterheatermodal .modal-footer  { background: url(../img/duke/bg-waterheater.png) no-repeat scroll 0px 0 #fff;}
+#homewiremodal .modal-footer  { background: url(../img/duke/bg-homewire.png) no-repeat scroll 0px 0 #fff;}
+#homewiredeluxemodal .modal-footer  { background: url(../img/duke/bg-homewiredeluxe.png) no-repeat scroll 0px 0  #fff;}
+
+#dukeRNRO  .modal .title1 {
+    color: #005a84;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0;
+	padding:0;
+}
+#dukeRNRO .modal .title2 {
+    color: #005a84;
+    font-size: 18px;
+	font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+}
+	
+#dukeRNRO .modal  .title3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 15px;
+}
+	
+#dukeRNRO .modal  ul.list2 li {
+	list-style:none;
+    background: url(../img/duke/bullet3.png) no-repeat scroll 0 6px rgba(0, 0, 0, 0);
+	font-size: 14px;
+    padding: 0 0 0 14px;
+}	
+
+#dukeRNRO .modal p{
+	font-size: 14px;
+    line-height: 1.5;
+}	
+
+#dukeRNRO .strPhone{color:#005a84; font-size: 30px; line-height: 40px;}	
+#dukeRNRO .box-call-top p.mobtxt1 {
+    font-family: "GothamMedium",Arial,sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+	color: #363636;
+}
+
+#dukeRNRO .col-md-12 .box-1 .planlogo {display:none;}
+/* -------------- DukeRNRO -------------- */
+
+
+/* ----- X-Provider Modal ----- */ 
+#xprovider-modal p{font-family:"GothamBook",Arial,Helvetica,sans-serif; text-align:center; font-size:14px;  margin-bottom:15px}
+#xprovider-modal .modal-sm{max-width: 400px; overflow:hidden;}
+#xprovider-modal .modal-dialog {border-radius:6px; -webkit-border-radius:6px; overflow:hidden;}
+
+#xprovider-modal .modal-footer p{color:#fff;  font-size:14px; margin-bottom: 0; border-radius: 0 0 6px 6px;}
+#xprovider-modal .planlogo {    height: 36px; margin: 0; text-align: center; text-indent: -9999px; width: 100%;}
+
+#xprovider-modal .modal-footer{ margin-bottom:-1px; margin-top: 0; }
+#xprovider-modal .modal-footer p{font-family: "GothamMedium",Arial,Helvetica,sans-serif; font-size:16px;}
+
+#xprovider-modal.TWC .modal-footer{ background:#00a9e0; }
+#xprovider-modal.ATTSTI .modal-footer{ background:#328fc8; }
+#xprovider-modal.COMCASt .modal-footer{ background:#2ea0dd; }
+#xprovider-modal.CTL .modal-footer{ background:#08974e; }
+#xprovider-modal.verizon .modal-footer{ background:#cc1900; }
+#xprovider-modal.charter .modal-footer{ background:#7cca28; }
+#xprovider-modal.cox .modal-footer{ background:#00549f; }
+#xprovider-modal.brighthouse .modal-footer{ background:#01009b; }
+#xprovider-modal.dtv .modal-footer{ background:#0099cc; }
+#xprovider-modal.exede .modal-footer{ background:#f37411; }
+/* ---- End X-Provider Modal ---- */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- 
+ OMOVE       gray: #a1abaa   Blue:  #42b2d5
+------------------------------------------------------------------------------------------------------------------------------------------- */  
+/* ----- header ----- */
+#OMOVE header {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#OMOVE #logo {
+    /* path to CMS */
+	background: url(../img/logo-omove.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 62px;
+    overflow: hidden;
+    text-indent: -999em;
+    text-transform: uppercase;
+    width: 218px;
+}
+#OMOVE #logoLink {
+	display: block;
+}
+#OMOVE .box-call-top p.txt1 {color: #a1abaa; font-size:16px; line-height:1.2}
+
+#OMOVE .box-call-top p.txt1 .strPhone{color: #42b2d5; font-size:26px; font-weight:bold;}
+
+#OMOVE .breadcrumb1.breadcrumb .cartstatus a {  color: #5d5d5d;}
+#OMOVE .breadcrumb1.breadcrumb .cartstatus strong { color: #42b2d5;}
+
+/* --- end header --- */
+
+/* ---breadcrumbs------------------------------------------------------------------------------------------------------------------------------------------- */  
+
+#OMOVE .breadcrumb1.breadcrumb > .active {background-color: #42b2d5 ; border-color: #3bb16a;color: #fff;}
+#OMOVE .breadcrumb.breadcrumb1 li{background: none repeat scroll 0 0 #e3e3e3;color: #8d8d8d; }
+#OMOVE .breadcrumb.breadcrumb1 li.active span:before {
+    border-top: 15px solid #42b2d5 ;
+    border-bottom: 15px solid #42b2d5 ;
+    border-left:15px solid transparent;
+}
+ 
+#OMOVE .breadcrumb.breadcrumb1 li.active span:after {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-left:15px solid #42b2d5 ;
+}
+#OMOVE .breadcrumb.breadcrumb1 li.steps {color: #ccc;}
+
+#OMOVE .breadcrumb.breadcrumb1 li.steps {
+    background: none repeat scroll 0 0 #59616b;
+    color: #ffffff;
+    text-shadow: none;
+}
+/*#OMOVE .breadcrumb.breadcrumb1 li.steps span:after {
+    border-bottom: 15px solid rgba(0, 0, 0, 0);
+    border-left: 15px solid #59616b;
+    border-top: 15px solid rgba(0, 0, 0, 0);
+
+}*/
+	
+/* ---Buttons------------------------------------------------------------------------------------------------------------------------------------------- */ 
+#OMOVE .btn-primary { background: none repeat scroll 0 0 #42b2d5; color: #fff; }
+#OMOVE .btn-primary:hover, #OMOVE .btn-primary:focus { color: #fff;  background: #838e95 ;}
+
+#OMOVE .btn-primary2 { background: #eeeeee; color: #777; border-color: #e3e3e3; font-size:12px}
+#OMOVE .btn-primary2:hover, #OMOVE .btn-primary2:focus { color: #333;  background: #ebebeb ;}
+
+#OMOVE .cart .btn-primary { margin: 5px 0;  padding: 10px 0;}
+#OMOVE .cart .btn-primary:hover { margin: 0; padding: 15px 0; }
+
+#OMOVE .btn-primary, #OMOVE .btn-primary2 {width:100%}
+#OMOVE .btn-primary, #OMOVE .btn-default, #OMOVE .btn-primary2 {margin: 5px 0;  padding: 6px 12px; }
+#OMOVE .btn-primary:hover, #OMOVE .btn-primary:focus, #OMOVE .btn-primary2:hover, #OMOVE .btn-primary2:focus { margin: 0;  padding: 11px 12px;}
+
+#OMOVE .btn-primary .fa{font-size:80%}
+
+#OMOVE .btn-call { background:  url(../img/btn-bg.png) repeat scroll 0 0  #42b2d5; color: #fff;}
+#OMOVE .btn-call:hover, #OMOVE .btn-call:focus { background: url(../img/btn-bg.png) repeat scroll 0 -100px #267786; color: #fff; }
+ 
+#OMOVE .compare-plans .txt2 a .fa-check-square{color:#fff;}
+
+#OMOVE .compare-plans .btn-primary { color: #fff;  background: #267786 ;}
+
+#OMOVE .btn.btn-primary.btn-xs.toggleButton {width:auto;}
+#OMOVE .btn.btn-primary.btn-xs, #OMOVE .btn.btn-primary.btn-xs:hover, #OMOVE .btn.btn-primary.btn-xs:focus {margin: 0; padding: 4px 12px;}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+#OMOVE ul.bullet-2 .fa-check{ color:#7fc134}
+
+/* ----- Confirmation page ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+ /*#OMOVE .box-5 .txt3 { border: 1px solid #ffa500;}*/
+#OMOVE .box-5 .txt3 span  {color:#ffa500}
+#OMOVE .box-5 .form-control {  border: 2px solid #ffa500 !important;}
+#OMOVE .box-5 .fa-info-circle {color:#ffa500}
+/*#OMOVE .box-4 h4 {border-bottom: 1px solid #ffa500; color:#ffa500}*/
+#OMOVE .box-5 .txt3{background:url(../img/logo-att.png) no-repeat 15px 15px ; }
+#OMOVE .messagebox p span {color:#42b2d5}
+
+/* ----- Popular Merchandizing ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+
+#OMOVE .box-1-inner.popular{ /*border-color:#702d86;*/ position: relative;}
+ 
+#OMOVE .box-1-inner.popular:before{
+border-color: transparent #42b2d5 transparent transparent;
+_border-color: #000000 #42b2d5 #000000 #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+#OMOVE .box-1.popular { border-color: #42b2d5;}

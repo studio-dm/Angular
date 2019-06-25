@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="sb">
+<head>
+<meta charset="utf-8">
+<title>Select your Services</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="widgetassets/css/bootstrap.css" rel="stylesheet">
+<link href="widgetassets/css/base.css" rel="stylesheet">
+<link href="widgetassets/css/theme.css" rel="stylesheet">
+<link href="widgetassets/css/base-responsive.css" rel="stylesheet">
+<link href="widgetassets/css/fonts.css" rel="stylesheet">
+<link href="widgetassets/css/font-awesome.css" rel="stylesheet">
+<link href="widgetassets/css/animate.css" rel="stylesheet">
+ <style>
+ 
+ .gridContainer, .gridlgContainer, .horizContainer {  animation-duration: .8s;
+   }
+   
+</style>
+<body id="CTL"  ng-cloak="">
+
+      <div ng-view="" id="ng-view"></div>
+ 
+
+<!-- Some Bootstrap Helper Libraries -->
+
+<script src="widgetassets/js/jquery-1.10.2.min.js"></script> 
+<script src="widgetassets/js/bootstrap.js"></script> 
+<script src="widgetassets/js/jquery.placeholder.min.js"></script> 
+<script src="widgetassets/js/equalheights.js"></script> 
+<script src="widgetassets/js/base.js"></script>
+
+<!-- Libraries -->
+<script src="js/angular.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.11.2.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+
+<!-- AngularJS custom codes -->
+<script src="app/app.js"></script>
+<script src="app/data.js"></script>
+<script src="app/productsCtrl.js"></script>
+
+
+<script>
+$( document ).ready(function() {
+$('.popover-markup > .trigger').popover({
+    html : true,
+	trigger: 'focus',
+    title: function() {
+      return $(this).parent().find('.head').html();
+    },
+    content: function() {
+      return $(this).parent().find('.popover-content').html();
+    },
+    container: 'body',
+    placement: 'top'
+});
+
+ 
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    $('.toggleButton').click(function() {
+        $(this).html($(this).html() == '+' ? '-' : '+');
+        $('.content-compare-plans .container-content').slideToggle(120);
+        return false;
+    });
+});
+</script>
+
+
+</body>
+</html>
